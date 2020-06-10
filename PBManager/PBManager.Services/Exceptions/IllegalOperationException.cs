@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PBManager.Services.Exceptions
 {
-    public class NotValidOperationException : ModelValidationException
+    public class IllegalOperationException : ModelValidationException
     {
-        public NotValidOperationException(string message)
+        public IllegalOperationException(string message)
             : base(message)
         {
 

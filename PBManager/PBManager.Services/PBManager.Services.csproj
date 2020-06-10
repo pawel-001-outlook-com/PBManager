@@ -44,7 +44,7 @@
     <Compile Include="Exceptions\AlreadyExistsException.cs" />
     <Compile Include="Exceptions\ModelValidationException.cs" />
     <Compile Include="Exceptions\NotFoundException.cs" />
-    <Compile Include="Exceptions\NotValidOperationException.cs" />
+    <Compile Include="Exceptions\IllegalOperationException.cs" />
     <Compile Include="Helpers\AccountService.cs" />
     <Compile Include="Helpers\CashflowService.cs" />
     <Compile Include="Helpers\CategoryService.cs" />
