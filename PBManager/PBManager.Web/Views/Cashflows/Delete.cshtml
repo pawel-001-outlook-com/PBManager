@@ -1,0 +1,69 @@
+﻿@model PBManager.Dto.ViewModels.CashflowViewModel
+@{
+    ViewBag.Title = "Delete cashflow";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <br /><small>Delete selected cashflow</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href=""><i class=""></i> Home</a></li>
+            <li><a href="@Url.Action("Index", "Cashflows")">Cashflows</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        
+        <div class="row">
+
+            <div class="col-md-8">
+                <!-- box -->
+                <div class="box box-danger">
+                    <div class="box-body">
+                        <div class="alert alert-danger alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+                            This operation cannot be reverted!
+                        </div>
+                        <dl class="dl-horizontal">
+                            <dt>@Html.DisplayNameFor(m => m.Name)</dt>
+                            <dd>@Html.DisplayFor(m => m.Name)</dd>
+                            <dt>@Html.DisplayNameFor(m => m.Description)</dt>
+                            <dd>@Html.DisplayFor(m => m.Description)</dd>
+                            <dt>@Html.DisplayNameFor(m => m.AccountingDate)</dt>
+                            <dd>@Model.AccountingDate.ToShortDateString()</dd>
+                            <dt>@Html.DisplayNameFor(m => m.Value)</dt>
+                            <dd>@Model.Value.ToString("F2")</dd>
+                            <dt>@Html.DisplayNameFor(m => m.Account.Name)</dt>
+                            <dd>@Html.DisplayFor(m => m.Account.Name)</dd>
+                            <dt>@Html.LabelFor(m => m.Category.Name, "Category name")</dt>
+                            <dd>@Html.DisplayFor(m => m.Category.Name)</dd>
+                            <dt>@Html.LabelFor(m => m.Subcategory.Name, "Subcategory name")</dt>
+                            <dd>@Html.DisplayFor(m => m.Subcategory.Name)</dd>
+                            <dt>@Html.DisplayNameFor(m => m.Project.Name)</dt>
+                            <dd>@Html.DisplayFor(m => m.Project.Name)</dd>
+
+                        </dl>
+                        <form action="@Url.Action("Delete", "Cashflows")" method="post">
+
+                            @Html.HiddenFor(m => m.Account.UserId)
+                            @Html.HiddenFor(m => m.Id)
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-flat btn-danger"><i class="fa fa-trash-o"></i> Delete</button>
+                        </form>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+        </div>
+
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

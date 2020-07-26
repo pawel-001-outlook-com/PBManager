@@ -1,0 +1,79 @@
+﻿@model IEnumerable<PBManager.Dto.ViewModels.ProjectViewModel>
+
+@{
+    ViewBag.Title = "Projects";
+}
+
+<div class="content-wrapper"><!-- Content Wrapper. Contains page content -->
+    <section class="content-header"><!-- Content Header (Page header) -->
+        <h1>
+            @ViewBag.Title
+            <br><small>Manage projects</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index", "Home")"><i class=""></i> Home</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <section class="content"><!-- Main content -->
+        <div class="row">
+        <div class="col-md-10">
+        
+
+            <div class="box box-primary"><!-- box -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="@Url.Action("New", "Projects")" class="btn btn-flat btn-block btn-success">
+                                <i class="fa fa-plus"></i> New project
+                            </a>
+                        </div>
+                    </div>
+                    <br />
+                    <table class="table table-hover datatable" style="width: 100%;">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Start date</th>
+                            <th>Total expanses</th>
+                            <th>Budget</th>
+                            <th>Budget used</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var project in Model)
+                        {
+                            <tr>
+                                <td>@project.Name</td>
+                                <td>@project.StartDate.ToShortDateString()</td>
+                                <td>@project.Cashflows.Sum(c => c.Value).ToString()</td>
+                                <td>@project.Budget.GetValueOrDefault().ToString("F2")</td>
+                                <td>
+                                @{ var projectBudgetUsedPercentage = Math.Round(project.ProjectBudgetConsumed, 2); }
+                                <div class="progress progress-xs" title="@projectBudgetUsedPercentage%">
+                                    <div class="progress-bar progress-bar-danger" style="width: @Math.Ceiling(projectBudgetUsedPercentage)%"></div>
+                                </div>
+                                </td>
+
+                                <td>
+                                    <div class="btn-group">
+                                        <a class="btn btn-flat btn-default" href="@Url.Action("View", "Projects", new { Id = project.Id})"><i class="fa fa-eye"></i> View</a>
+                                        <a class="btn btn-flat btn-default" href="@Url.Action("Edit", "Projects", new { Id = project.Id})"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                        <a class="btn btn-flat btn-danger" href="@Url.Action("Delete", "Projects", new { Id = project.Id})"><i class="fa fa-trash-o"></i> Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

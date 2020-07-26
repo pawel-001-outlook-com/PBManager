@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBManager.Web.Tests", "PBMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBManager.Dal", "PBManager.DAL\PBManager.Dal.csproj", "{64933484-BFDD-4DF5-9C7B-26CCAEE2E21B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBManager.Services", "PBManager.Services\PBManager.Services.csproj", "{9A38326E-D048-4A60-BBC6-2E83B27A384C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBManager.Utilities", "PBManager.Services\PBManager.Utilities.csproj", "{9A38326E-D048-4A60-BBC6-2E83B27A384C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBManager.Dto", "PBManager.Dto\PBManager.Dto.csproj", "{38F01359-E09E-413D-A6EB-1E9393BA5C65}"
 EndProject

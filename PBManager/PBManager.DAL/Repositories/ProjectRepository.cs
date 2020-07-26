@@ -5,82 +5,91 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using PBManager.Core.Models;
+using PBManager.DAL.Contracts;
 
 namespace PBManager.DAL.Repositories
 {
-    public class ProjectRepository
+    public class ProjectRepository : IProjectRepository
     {
-        public IEnumerable<Project> GetAllProjects()
+        private readonly DataContext _dataContext;
+
+        public ProjectRepository(DataContext dataContext)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Projects
-                    .Include(p => p.Cashflows)
-                    .Include("Movements.Category")
-                    .Where(p => p.Enabled).ToList();
-            }
+            _dataContext = dataContext;
         }
+
         
+        // public IEnumerable<Project> GetAllProjects()
+        // {
+        //     return _dataContext.Projects
+        //             .Include(p => p.Cashflows.Select(cf => cf.Subcategory))
+        //             .ToList();
+        // }
+        
+
         public IEnumerable<Project> GetAllProjects(string name)
         {
-                using (DataContext context = new DataContext())
-                {
-                    return context.Projects
-                        .Include(p => p.Cashflows)
-                        .Include("Movements.Category")
-                        .Where(p => p.Name.Equals(name) && p.Enabled).ToList();
-
-                }
+                    return _dataContext.Projects
+                        .Include(p => p.Cashflows.Select(cf => cf.Subcategory))
+                        .Where(p => p.Name.Equals(name))
+                        .ToList();
         }
 
-        public IEnumerable<Project> GetAllActiveProjects()
-        {
-            using (DataContext context = new DataContext())
-            {
-                return context.Projects
-                    .Include(p => p.Cashflows)
-                    .Include("Cashflow.Category")
-                    .ToList();
-            }
-        }
+
+        // public IEnumerable<Project> GetAllActiveProjects()
+        // {
+        //         return _dataContext.Projects
+        //             .Include(p => p.Cashflows.Select(cf => cf.Subcategory))
+        //             .ToList();
+        // }
+
 
         public Project GetProjectByName(string name)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Projects
+                return _dataContext.Projects
                     .Include(p => p.Cashflows)
                     .SingleOrDefault(p => p.Name.Equals(name));
-            }
         }
+
 
         public Project GetProjectById(int id)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Projects
-                    .Include(p => p.Cashflows)
-                    .Include("Cashflows.Category")
+                return _dataContext.Projects
+                    .Include(p => p.Cashflows.Select(cf => cf.Subcategory))
                     .SingleOrDefault(p => p.Id.Equals(id));
-            }
         }
 
-        public void Insert(Project project)
+
+        public IEnumerable<Project> GetAllProjectsAndUser(int userId)
         {
-            using (DataContext context = new DataContext())
-            {
-                context.Projects.Add(project);
-                context.SaveChanges();
-            }
+                return _dataContext.Projects
+                    .Where(p => p.UserId == userId)
+                    .Include(p => p.Cashflows.Select(cf => cf.Subcategory))
+                    .ToList();
+        }
+
+
+        // public void Remove(Project project){
+        //         _dataContext.Entry(project).State = EntityState.Deleted;
+        //         _dataContext.SaveChanges();
+        // }
+
+
+
+
+        public void Add(Project project)
+        {
+            _dataContext.Projects.Add(project);
         }
 
         public void Update(Project project)
         {
-            using (DataContext context = new DataContext())
-            {
-                context.Entry(project).State = EntityState.Modified;
-                context.SaveChanges();
-            }
+            _dataContext.Entry(project).State = EntityState.Modified;
+        }
+
+        public void Delete(Project project)
+        {
+            _dataContext.Entry(project).State = EntityState.Deleted;
         }
     }
 }

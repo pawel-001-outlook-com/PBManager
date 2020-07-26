@@ -5,81 +5,101 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PBManager.Core.Models;
+using PBManager.DAL.Contracts;
 
 namespace PBManager.DAL.Repositories
 {
-    public class CategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
+        private readonly DataContext _dataContext;
+
+        public CategoryRepository(DataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
+
+
         public IEnumerable<Category> GetCategories()
         {
-            using (DataContext context = new DataContext())
-            {
-                var categories = context.Categories
-                    .Include(c => c.Subcategories)
-                    .Include(c => c.Cashflows)
-                    .ToList();
+            var categories = _dataContext.Categories
+                .AsNoTracking()
+                .Include(c => c.Subcategories)
+                .Include(c => c.Cashflows)
+                .ToList();
 
-                foreach (var category in categories)
-                    category.Subcategories = category.Subcategories.ToList();
+            foreach (var category in categories)
+                category.Subcategories = category.Subcategories.ToList();
 
-                return categories;
-            }
+            return categories;
         }
+        
 
         public Category GetCategoryById(int id)
         {
-            using (DataContext context = new DataContext())
-            {
-                var category = context.Categories
-                    .Include(c => c.Subcategories)
-                    .Include(c => c.Cashflows)
-                    .SingleOrDefault(c => c.Id.Equals(id));
+            var category = _dataContext.Categories
+                .AsNoTracking()
+                .Include(c => c.Subcategories)
+                .Include(c => c.Cashflows)
+                .ToList()
+                .SingleOrDefault(c => c.Id.Equals(id));
 
-                if (category != null)
-                    category.Subcategories = category.Subcategories.ToList();
+            if (category != null)
+                category.Subcategories = category.Subcategories.ToList();
 
-                return category;
-            }
+            return category;
         }
+
 
         public Category GetCategoryByName(string name, string type)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Categories
-                    .Include(c => c.Subcategories)
-                    .Include(c => c.Cashflows)
-                    .SingleOrDefault(c => c.Name.Equals(name) && c.Type.Equals(type));
-            }
+            return _dataContext.Categories
+                .AsNoTracking()
+                .Include(c => c.Subcategories)
+                .Include(c => c.Cashflows)
+                .SingleOrDefault(c => c.Name.Equals(name) && c.Type.Equals(type));
         }
+
 
         public ICollection<Category> GetCategoriesByName(string name)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Categories
-                    .Include(c => c.Subcategories)
-                    .Where(c => c.Name.Equals(name))
-                    .ToList();
-            }
+            return _dataContext.Categories
+                .AsNoTracking()
+                .Include(c => c.Subcategories)
+                .Where(c => c.Name.Equals(name))
+                .ToList();
         }
 
-        public void Insert(Category category)
+       
+        public IEnumerable<Category> GetCategoriesAndUser(int userId)
         {
-            using (DataContext context = new DataContext())
-            {
-                context.Categories.Add(category);
-                context.SaveChanges();
-            }
+            var categories = _dataContext.Categories
+                .AsNoTracking()
+                .Where(c => c.UserID == userId)
+                .Include(c => c.Subcategories)
+                .Include(c => c.Cashflows)
+                .ToList();
+
+            foreach (var category in categories)
+                category.Subcategories = category.Subcategories.ToList();
+
+            return categories;
+        }
+
+
+        public void Add(Category category)
+        {
+            _dataContext.Categories.Add(category);
         }
 
         public void Update(Category category)
         {
-            using (DataContext context = new DataContext())
-            {
-                context.Entry(category).State = EntityState.Modified;
-                context.SaveChanges();
-            }
+            _dataContext.Entry(category).State = EntityState.Modified;
         }
+
+        public void Delete(Category category)
+        {
+            _dataContext.Entry(category).State = EntityState.Deleted;
+        }
+
     }
 }

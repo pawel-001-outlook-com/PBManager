@@ -1,0 +1,84 @@
+﻿@model  PBManager.Dto.ViewModels.ProjectViewModel
+@{
+    ViewBag.Title = "Edit project";
+
+    // SelectList projectStatusComboBox = new SelectList(Enum.GetValues(typeof(ProjectStatus)));
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <br><small>Edit selected project</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href=""><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="@Url.Action("Index", "Projects")">Projects</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- box -->
+        <div class="box box-success">
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form role="form" action="@Url.Action("Edit", "Projects")" method="post">
+                            
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Id)
+                                        @Html.TextBoxFor(m => m.Id, new { Class = "form-control", Readonly = "readonly" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Name)
+                                        @Html.TextBoxFor(m => m.Name, new { Class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Name, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.StartDate)
+                                        @Html.TextBoxFor(m => m.StartDate, DateTime.Now.ToShortDateString(), new { Class = "form-control", Readonly = "readonly" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Description)
+                                        @Html.TextAreaFor(m => m.Description, new { Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            @Html.HiddenFor(m => m.UserId)
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-success btn-flat pull-left"><i class="fa fa-floppy-o"></i> Update</button>
+
+                        </form>
+                
+                    </div>
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
