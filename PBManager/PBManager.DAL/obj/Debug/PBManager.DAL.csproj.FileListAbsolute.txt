@@ -1,0 +1,800 @@
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.csprojAssemblyReference.cache
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.csproj.CoreCompileInputs.cache
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.csproj.CopyComplete
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init481.resources
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.csproj.GenerateResource.cache
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+F:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+F:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init481.resources
+F:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+F:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+F:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+F:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+F:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init481.resources
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.AccountKindId.resources
+H:\PBM test\PBManager\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfnotype.resources
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init0001.resources
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfstat.resources
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init0001.resources
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfstat.resources
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init0001.resources
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfstat.resources
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init0001.resources
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfstat.resources
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init0001.resources
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfstat.resources
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.projectuseruserId.resources
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.categoryuseruserId.resources
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init0001.resources
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfstat.resources
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.projectuseruserId.resources
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.categoryuseruserId.resources
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.init0001.resources
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfstat.resources
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.projectuseruserId.resources
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.categoryuseruserId.resources
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.accconf010.resources
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addedaccountdescription.resources
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+J:\PBM test\PBManager 20200717_0950\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+J:\PBM test\PBManager 20200717_1156 - account DI poprawki - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200717_2249 - uow subcategory - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200718_0845\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+E:\temp_pj\PBManager 20200718_1019\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200718_1540 - report chyba dobrze - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcashflowconfiguration.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addsubcategoryconfiguration.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addprojectconfiguration.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcategorydescription.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cgnoinclusiondate.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.addcfname.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.cfdescriptionnotrequired.resources
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.accountnoAccountKind.resources
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.test010.resources
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll.config
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.DAL.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\PBManager.Dto.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\CommonServiceLocator.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Helpers.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Http.WebHost.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Mvc.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.Razor.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Abstractions.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Configuration.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Container.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.Interception.Configuration.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.RegistrationByConvention.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\bin\Debug\Unity.ServiceLocation.pdb
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csprojAssemblyReference.cache
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.Migrations.test010.resources
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.GenerateResource.cache
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CoreCompileInputs.cache
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.Dal.csproj.CopyComplete
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.dll
+E:\temp_pj\dla p gago\PBManager 20200724_1931 - poprawki dla P Gago - Copy\PBManager\PBManager.DAL\obj\Debug\PBManager.DAL.pdb
