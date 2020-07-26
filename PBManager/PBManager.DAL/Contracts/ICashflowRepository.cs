@@ -7,6 +7,7 @@ namespace PBManager.DAL.Contracts
 {
     public interface ICashflowRepository
     {
+        // mmm
         IEnumerable<Cashflow> GetAllCashflows();
         IEnumerable<Cashflow> GetCashflowsByAccount(int accountId);
         IEnumerable<Cashflow> GetCashflowsByUser(int userId);
