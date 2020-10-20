@@ -1,0 +1,84 @@
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+F:\PBM test\PBManager\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+F:\PBM test\PBManager\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+F:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+F:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+F:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+F:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+H:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200715_0852\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+J:\PBM test\PBManager 20200716_0942\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200720_1417 - poprawki wizualne\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200724_1931 - poprawki dla P Gago\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200816_1433 - forms auth\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200816_1433 - forms auth\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+E:\temp_pj\PBManager 20200816_1433 - forms auth\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+E:\temp_pj\PBManager 20200816_1433 - forms auth\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+E:\temp_pj\PBManager 20200816_1433 - forms auth\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+E:\temp_pj\PBManager 20200816_1433 - forms auth\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb
+E:\_temp_pj\PBManager 20201020_1953 - forms auth - Copy\PBManager\PBManager.Core\bin\Debug\PBManager.Core.dll
+E:\_temp_pj\PBManager 20201020_1953 - forms auth - Copy\PBManager\PBManager.Core\bin\Debug\PBManager.Core.pdb
+E:\_temp_pj\PBManager 20201020_1953 - forms auth - Copy\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csprojAssemblyReference.cache
+E:\_temp_pj\PBManager 20201020_1953 - forms auth - Copy\PBManager\PBManager.Core\obj\Debug\PBManager.Core.csproj.CoreCompileInputs.cache
+E:\_temp_pj\PBManager 20201020_1953 - forms auth - Copy\PBManager\PBManager.Core\obj\Debug\PBManager.Core.dll
+E:\_temp_pj\PBManager 20201020_1953 - forms auth - Copy\PBManager\PBManager.Core\obj\Debug\PBManager.Core.pdb

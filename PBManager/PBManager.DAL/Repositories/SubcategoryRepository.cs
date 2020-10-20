@@ -5,87 +5,220 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using PBManager.Core.Models;
+using PBManager.DAL.Contracts;
 
 namespace PBManager.DAL.Repositories
 {
-    public class SubcategoryRepository
+    public class SubcategoryRepository : ISubcategoryRepository
     {
+        private readonly DataContext _dataContext;
+
+        public SubcategoryRepository(DataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
+
+
+        // public IEnumerable<Subcategory> GetSubcategories()
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         return context.Subcategories
+        //             .Include(s => s.Category)
+        //             .ToList();
+        //     }
+        // }
+
+
         public IEnumerable<Subcategory> GetSubcategories()
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Subcategories
+            return _dataContext.Subcategories
+                .AsNoTracking()
                     .Include(s => s.Category)
                     .ToList();
-            }
         }
+
+
+
+        // public IEnumerable<Subcategory> GetSubcategoriesByName(string name, int baseCategoryId)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         return context.Subcategories
+        //             .Include(s => s.Category)
+        //             .Where(s => s.Name.Equals(name) && s.Category.Id.Equals(baseCategoryId)).ToList();
+        //     }
+        // }
+
 
         public IEnumerable<Subcategory> GetSubcategoriesByName(string name, int baseCategoryId)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Subcategories
-                    .Include(s => s.Category)
-                    .Where(s => s.Name.Equals(name) && s.Category.Id.Equals(baseCategoryId)).ToList();
-            }
+            return _dataContext.Subcategories
+                .Include(s => s.Category)
+                .Where(s => s.Name.Equals(name) && s.Category.Id.Equals(baseCategoryId))
+                .ToList();
         }
+
+        // public Subcategory GetSubcategoryById(int id)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         return context.Subcategories
+        //             .Include(s => s.Category)
+        //             .Include(s => s.Cashflows)
+        //             .FirstOrDefault(s => s.Id.Equals(id));
+        //     }
+        // }
+
 
         public Subcategory GetSubcategoryById(int id)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Subcategories
+                return _dataContext.Subcategories.AsNoTracking()
                     .Include(s => s.Category)
                     .Include(s => s.Cashflows)
                     .FirstOrDefault(s => s.Id.Equals(id));
-            }
         }
 
-        public async Task<Subcategory> GetSubcategoryByName(string name)
+
+
+        // public Subcategory GetSubcategoryByName(string name)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         return context.Subcategories.Where(s => s.Name.Equals(name)).FirstOrDefault();
+        //     }
+        // }
+
+
+        public Subcategory GetSubcategoryByName(string name)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Subcategories.Where(s => s.Name.Equals(name)).FirstOrDefault();
-            }
+            return _dataContext.Subcategories
+                .Where(s => s.Name.Equals(name))
+                .FirstOrDefault();
         }
+
+        // public Subcategory GetSubcategoryByName(string name, int baseCategoryId)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         return context.Subcategories
+        //             .Include(s => s.Category)
+        //             .Where(s => s.Category.Id.Equals(baseCategoryId) && s.Name.Equals(name)).
+        //             FirstOrDefault();
+        //     }
+        // }
+
 
         public Subcategory GetSubcategoryByName(string name, int baseCategoryId)
         {
-            using (DataContext context = new DataContext())
-            {
-                return context.Subcategories
+            return _dataContext.Subcategories
                     .Include(s => s.Category)
                     .Where(s => s.Category.Id.Equals(baseCategoryId) && s.Name.Equals(name)).
                     FirstOrDefault();
-            }
         }
 
-        public void Insert(Subcategory subcategory)
+
+        // public void Insert(Subcategory subcategory)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         context.Subcategories.Add(subcategory);
+        //         context.SaveChanges();
+        //     }
+        // }
+
+
+        public void Add(Subcategory subcategory)
         {
-            using (DataContext context = new DataContext())
+            _dataContext.Subcategories.Add(subcategory);
+        }
+
+        // public void Update(Subcategory subcategory)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         context.Entry(subcategory).State = EntityState.Modified;
+        //         context.SaveChanges();
+        //     }
+        // }
+
+        // public void Update(ICollection<Subcategory> subcategories)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         foreach (var subcategory in subcategories)
+        //             context.Entry(subcategory).State = EntityState.Modified;
+        //         context.SaveChanges();
+        //     }
+        // }
+
+        public void Update(ICollection<Subcategory> subcategories)
+        {
+            foreach (var subcategory in subcategories)
             {
-                context.Subcategories.Add(subcategory);
-                context.SaveChanges();
+                _dataContext.Entry(subcategory).State = EntityState.Modified;
             }
         }
 
         public void Update(Subcategory subcategory)
         {
-            using (DataContext context = new DataContext())
-            {
-                context.Entry(subcategory).State = EntityState.Modified;
-                context.SaveChanges();
-            }
+            _dataContext.Entry(subcategory).State = EntityState.Modified; 
         }
 
-        public void Update(ICollection<Subcategory> subcategories)
+
+
+        // public void Remove(Subcategory subcategory)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         context.Entry(subcategory).State = EntityState.Deleted;
+        //         context.SaveChanges();
+        //     }
+        // }
+
+        public void Delete(Subcategory subcategory)
         {
-            using (DataContext context = new DataContext())
-            {
-                foreach (var subcategory in subcategories)
-                    context.Entry(subcategory).State = EntityState.Modified;
-                context.SaveChanges();
-            }
+            _dataContext.Entry(subcategory).State = EntityState.Deleted;
         }
+
+
+        // public void Remove(ICollection<Subcategory> subcategories)
+        // {
+        //     using (DataContext context = new DataContext())
+        //     {
+        //         foreach (var subcategory in subcategories)
+        //             context.Entry(subcategory).State = EntityState.Deleted;
+        //         context.SaveChanges();
+        //     }
+        // }
+
+        public void Delete(ICollection<Subcategory> subcategories)
+        {
+            Subcategory s;
+            List<Subcategory> l = subcategories.ToList();
+            int n = l.Count;
+            for (int i = 0; i < n; i++)
+            {
+                s = l[i];
+                _dataContext.Entry(s).State = EntityState.Deleted;
+            }
+
+
+            // foreach (var subcategory in subcategories)
+            // {
+            //     _dataContext.Entry(subcategory).State = EntityState.Deleted;
+            // }
+        }
+
+
+        public IEnumerable<Subcategory> GetSubcategoriesAndUser(int userId)
+        {
+                return _dataContext.Subcategories
+                    .Include(s => s.Category)
+                    .Include(s => s.Cashflows)
+                    .Where(s => s.Category.UserID == userId)
+                    .ToList();
+        }
+        
     }
 }

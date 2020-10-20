@@ -1,0 +1,70 @@
+﻿@model PBManager.Dto.ViewModels.CategoryViewModel
+
+@{
+    ViewBag.Title = "New category";
+
+    List<SelectListItem> categoryTypeComboBox = new List<SelectListItem>()
+
+    {
+        // new SelectListItem { Text = "Credit", Value = "C" },
+        // new SelectListItem { Text = "Debit", Value = "D" }
+
+    };
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <small>Create new category</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href=""><i class=""></i> Home</a></li>
+            <li><a href="@Url.Action("Index", "Categories")">Categories</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section><!-- /.section header -->
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- box -->
+        <div class="row">
+        <div class="col-md-8">
+        
+
+
+        <div class="box box-primary">
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form role="form" action="@Url.Action("New", "Categories")" method="post">
+                            @* <span class="text-red">@Html.ValidationSummary()</span> *@
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Name)
+                                @Html.TextBoxFor(m => m.Name, new { Class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Name, "", new { Class = "text-red" })
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Description)
+                                        @Html.TextAreaFor(m => m.Description, new { Class = "form-control" })
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            @Html.HiddenFor(m => m.UserId)
+                            @Html.AntiForgeryToken()
+                            <br />
+                            <button type="submit" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</button>
+                        </form><!-- /.form category -->
+
+                    </div>
+                </div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box form -->
+    </section><!-- /.section content -->
+</div><!-- /.content-wrapper -->

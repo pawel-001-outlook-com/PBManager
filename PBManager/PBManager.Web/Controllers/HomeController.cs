@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PBManager.Core.Models;
+using PBManager.Dto.ViewModels;
+using PBManager.Services.Helpers;
 
 namespace PBManager.Web.Controllers
 {
+    [Authorize(Roles ="guest")]
     public class HomeController : Controller
     {
+        private AccountService _as = new AccountService();
+
         public ActionResult Index()
         {
-            return View();
+            var dvm = new DashboardViewModel();
+            return View(dvm);
         }
 
         public ActionResult About()

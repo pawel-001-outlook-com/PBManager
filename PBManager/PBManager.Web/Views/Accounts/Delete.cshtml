@@ -1,0 +1,58 @@
+﻿@model PBManager.Dto.ViewModels.AccountViewModel
+
+@{
+    ViewBag.Title = "Delete selected account";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <br /><small>Delete selected account</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href=""><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="@Url.Action("Index", "Accounts")">Accounts</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- box -->
+        <div class="col-md-6">
+            <div class="box box-danger">
+                <div class="box-body">
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+                        This operation can not be undone!
+                    </div>
+                    <dl class="dl-horizontal">
+                        <dt>@Html.DisplayNameFor(m => m.Name)</dt>
+                        <dd>@Html.DisplayFor(m => m.Name)</dd>
+                        <dt>@Html.DisplayNameFor(m => m.Balance)</dt>
+                        <dd>@Model.Balance.ToString("F2")</dd>
+                        <dt>@Html.DisplayNameFor(m => m.Cashflows)</dt>
+                        <dd>@Html.DisplayFor(m => m.Cashflows.Count)</dd>
+                        <dt>@Html.DisplayNameFor(m => m.Description)</dt>
+                        <dd>@Html.DisplayFor(m => m.Description)</dd>
+                    </dl>
+
+                    <form action="@Url.Action("Delete", "Accounts")" method="post">
+                        @Html.HiddenFor(m => m.Id)
+
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-flat btn-danger"><i class="fa fa-trash-o"></i> Delete</button>
+                    </form>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <div class="col-md-6"></div>
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

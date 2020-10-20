@@ -12,14 +12,14 @@ namespace PBManager.Core.Models
     {
         public string Name { get; set; }
 
-        [ForeignKey("Category")]
+        // [ForeignKey("Category")]
         public int CategoryId { get; set; }
         public Category Category { get; set; }
 
         public virtual ICollection<Cashflow> Cashflows { get; set; } = new List<Cashflow>();
-
-        public bool CanEdit { get; set; } = true;
-
-        public bool Enabled { get; set; } = true;
+        //
+        // public bool CanEdit { get; set; } = true;
+        //
+        // public bool Enabled { get; set; } = true;
     }
 }

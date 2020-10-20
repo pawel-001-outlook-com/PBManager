@@ -1,0 +1,95 @@
+﻿@model PBManager.Dto.ViewModels.AccountViewModel
+
+@{
+    ViewBag.Title = "Create Account";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <br /><small>Add new account</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href=""><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="@Url.Action("Index", "Accounts")">Accounts</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        
+        <div class="row">
+            <div class="col-md-10">
+        
+
+                <!-- box -->
+                <div class="box box-success">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form role="form" action="@Url.Action("New", "Accounts")" method="post">
+                                    @* <span class="text-red">@Html.ValidationSummary()</span> *@
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.Name)
+                                                @Html.TextBoxFor(m => m.Name, new {Class = "form-control"})
+                                                @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.Description)
+                                                @Html.TextAreaFor(m => m.Description, new {Class = "form-control"})
+                                                @Html.ValidationMessageFor(m => m.Description, "", new {Class = "text-red"})
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        @* <div class="col-md-6"> *@
+                                        @*     <div class="form-group"> *@
+                                        @*         @Html.LabelFor(a => a.AccountKindId) *@
+                                        @*         @Html.DropDownListFor(a => a.AccountKindId, new SelectList(Model.AccountKinds, "Id", "Name"), "", new { @class = "form-control" }) *@
+                                        @*     </div> *@
+                                        @* </div> *@
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.InitialBalance)
+                                                @Html.TextBoxFor(m => m.InitialBalance, new {Class = "form-control"})
+                                                @Html.ValidationMessageFor(m => m.InitialBalance, "", new {Class = "text-danger"})
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @Html.HiddenFor(m => m.UserId)
+
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+@Scripts.Render("~/Bundles/js")
+@Scripts.Render("~/bundles/jqueryval")
+

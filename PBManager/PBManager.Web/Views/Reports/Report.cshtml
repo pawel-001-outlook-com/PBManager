@@ -1,0 +1,237 @@
+﻿@model PBManager.Dto.ViewModels.ReportViewModel
+@{
+    ViewBag.Title = "Reports";
+
+    SelectList categoriesComboBox = ViewBag.categoriesSelectList;
+    SelectList accountsComboBox = ViewBag.accountsSelectList;
+    SelectList subcategoriesComboBox = new SelectList(new List<string>(), "Id", "Name", new { });
+    SelectList projectsComboBox = ViewBag.projectsSelectList;
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <small></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index", "Home")"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- parameters-box -->
+                <div class="box box-info">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Report criteria</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="box-body">
+                        <form role="search" action="@Url.Action("Report", "Reports")" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.AccountId)
+                                        @Html.DropDownListFor(m => m.AccountId, accountsComboBox, "(Required)", new { Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.CategoryId)
+                                        @Html.DropDownListFor(m => m.CategoryId, categoriesComboBox, "(Optional)", new { Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.SubcategoryId)
+                                        @Html.DropDownListFor(m => m.SubcategoryId, subcategoriesComboBox, "(Optional)", new { Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.ProjectId)
+                                        @Html.DropDownListFor(m => m.ProjectId, projectsComboBox, "(Optional)", new { Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.DateFrom)
+                                        <div class="input-group date">
+                                            @Html.TextBoxFor(m => m.DateFrom, new { Class = "form-control pull-right", Type = "date" })
+                                            @Html.ValidationMessageFor(m => m.DateFrom, "", new { Class = "text-red" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.DateTo)
+                                        <div class="input-group date">
+                                            @Html.TextBoxFor(m => m.DateTo, new { Class = "form-control pull-right", Type = "date" })
+                                            @Html.ValidationMessageFor(m => m.DateTo, "", new { Class = "text-red" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            @Html.HiddenFor(m => m.UserId)
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-sm btn-primary btn-flat pull-left"><i class="fa fa-search"></i> Search</button>
+                        </form>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.parameters-box -->
+            </div>
+
+            <div class="col-md-6"></div>
+
+        </div>
+
+
+
+
+
+        <!-- table-box -->
+        <div class="box box-primary">
+            <!-- box header -->
+            <div class="box-header with-border">
+                <h3 class="box-title">Report result</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            
+            <!-- box body -->
+            <div class="box-body">
+                @* <table class="table table-bordered table-striped table-hover datatable-export" style="width: 100%;"> *@
+                <table class="table table-bordered table-striped table-hover datatable-export" style="width: 100%;">
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Value</th>
+                            <th>Category</th>
+                            <th>Subcategory</th>
+                            <th>Project</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var cf in Model.Cashflows)
+                    {
+                        <tr>
+                            <td>@cf.Name</td>
+                            <td>@cf.AccountingDate.ToShortDateString()</td>
+                            <td>@cf.Value.ToString("F2")</td>
+                            <td>
+                                @if (@cf.Category == null)
+                                {
+                                    <span>no category</span>}
+                                @if (@cf.Category != null)
+                                {@cf.Category.Name
+                                }
+                            </td>
+                            <td>
+                                @if (@cf.Subcategory == null)
+                                {
+                                    <span>no subcategory</span>}
+                                @if (@cf.Subcategory != null)
+                                {@cf.Subcategory.Name
+                                }
+                            </td>
+                            <td>
+                                @if (@cf.Project == null)
+                                {
+                                    <span>no project</span>}
+                                @if (@cf.Project != null)
+                                {@cf.Project.Name
+                                }
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.body -->
+        </div>
+    
+    
+    
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+
+
+
+
+
+
+
+@* @Scripts.Render("~/Bundles/js") *@
+@Scripts.Render("~/bundles/jqueryval")
+
+@section Scripts {
+    <script type="text/javascript">
+        //        $('#CategoryId').on('changed.bs.select #CategoryId',
+        $('#categoryId').change(
+            function() {
+                var selectedCategory = $('#categoryId').val();
+                var subcategorySelect = $('#subcategoryId');
+                subcategorySelect.empty();
+                if (selectedCategory != null && selectedCategory != '') {
+                    $.getJSON('@Url.Action("GetCategoryAndSubcategories")',
+                        { categoryId: selectedCategory },
+                        function(subcategories) {
+                            if (subcategories != null && !jQuery.isEmptyObject(subcategories)) {
+                                subcategorySelect.append($('<option/>',
+                                    {
+                                        value: "",
+                                        text: "(Choose one [updated])"
+                                    }));
+                                $.each(subcategories,
+                                    function(index, subcategory) {
+                                        subcategorySelect.append($('<option/>',
+                                            {
+                                                value: subcategory.Value,
+                                                text: subcategory.Text
+                                            }));
+                                    });
+                            };
+                        });
+                }
+            });
+    </script>
+}

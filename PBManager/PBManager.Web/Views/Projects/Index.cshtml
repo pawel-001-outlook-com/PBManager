@@ -1,0 +1,121 @@
+﻿@model IEnumerable<PBManager.Dto.ViewModels.ProjectViewModel>
+
+@{
+    ViewBag.Title = "Projects";
+}
+
+<div class="content-wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <section class="content-header">
+        <!-- Content Header (Page header) -->
+        <h1>
+            @ViewBag.Title
+            <br><small>Manage projects</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index", "Home")"><i class=""></i> Home</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <section class="content">
+        <!-- Main content -->
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <div class="box box-primary">
+                    <!-- box -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <a href="@Url.Action("New", "Projects")" class="btn btn-flat btn-block btn-success">
+                                    <i class="fa fa-plus"></i> New project
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <table class="table table-hover data-table" style="width: 100%;" id="tblProjects">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Start date</th>
+                                    <th>Total expanses</th>
+                                    <th>Budget</th>
+                                    @* <th>Budget used</th> *@
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+
+
+
+@section Scripts{
+
+    <script src="~/Content/AdminLte2/plugins/datatables/jquery.dataTables.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $.ajaxSetup({
+                cache: false
+            });
+
+            $("#tblProjects")
+                .DataTable({
+                    "serverSide": true,
+                    "ajax": "/Projects/ProjectData",
+                    columnDefs: [{ orderable: false, targets: [3] }],
+                    "columns": [
+                        { "data": "Name" },
+                        { "data": "sStartDate" },
+                        { "data": "TotalExpanses" },
+                        { "data": "Budget" },
+//                        { "data": "ProjectBudgetConsumed" },
+                        {
+                            data: null,
+                            render: function(data, type, row) {
+                                return "<div class='progress progress-xs' title='used%'> " +
+                                    "<div class='progress-bar progress-bar-danger' style='width:" +
+                                    row.ProjectBudgetConsumed +
+                                    "%'></div></div>";
+                            }
+                        },
+                    {
+                            data: null,
+                            render: function(data, type, row) {
+                                return "<a href='/Projects/View/" +
+                                    + row.Id +
+                                    "'" +
+                                    "class='btn btn-flat btn-default'><i class='fa fa-eye'></i> View </a> " +
+                                    "<a href='/Projects/Edit/" +
+                                    row.Id +
+                                    "'" +
+                                    "class='btn btn-flat btn-default'><i class='fa fa-pencil-square-o'></i> Edit </a> " +
+                                    "<a href='/Projects/Delete/" +
+                                    + row.Id +
+                                    "'" +
+                                    "class='btn btn-flat btn-danger' > <i class='fa fa-trash-o'></i> Delete </a > ";
+                            }
+                    }
+            ],
+            searchDelay: 1000
+        });
+        })
+    </script>
+
+
+
+}

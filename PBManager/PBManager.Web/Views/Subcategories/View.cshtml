@@ -1,0 +1,106 @@
+﻿@model PBManager.Dto.ViewModels.SubcategoryViewModel
+
+@{
+    ViewBag.Title = "View subcategory";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href=""><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="@Url.Action("Index", "Subcategories")">Subcategories</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- box -->
+        <div class="box box-primary">
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Id)
+                                        @Html.TextBoxFor(m => m.Id, new { Class = "form-control", Readonly = "readonly" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Name)
+                                @Html.TextBoxFor(m => m.Name, new { Class = "form-control", Readonly = "readonly" })
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Category.Name)
+                                @Html.TextBoxFor(m => m.Category.Name, new { Class = "form-control", Readonly = "readonly" })
+                            </div>
+                            <br />
+                            <a href="@Url.Action("Edit", "Subcategories", new { Id = Model.Id})" class="btn btn-sm btn-warning btn-flat pull-left"><i class="fa fa-pencil-square-o"></i> Edit subcategory</a>
+                            <a href="@Url.Action("Delete", "Subcategories", new { Id = Model.Id})" class="btn btn-sm btn-danger btn-flat pull-left"><i class="fa fa-trash-o"></i> Delete subcategory</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- table-box -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Subcategory details</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered table-striped datatable" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>AccountingDate</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Cashflows.Take(10).OrderByDescending(m => m.Id))
+                                {
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>@item.AccountingDate.ToShortDateString()</td>
+                                        <td>@item.Value.ToString("F2")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.body -->
+                    <div class="box-footer clearfix">
+                        <a href="@Url.Action("New", "Cashflows")" class="btn btn-sm btn-info btn-flat pull-left"><i class="fa fa-plus"></i> Add cashflow</a>
+                    </div>
+                    <!-- /.box-footer -->
+                </div>
+                <!-- ./table-box -->
+            </div>
+        </div>
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

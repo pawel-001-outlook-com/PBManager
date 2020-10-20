@@ -17,8 +17,14 @@ namespace PBManager.Core.Models
         public virtual ICollection<Subcategory> Subcategories { get; set; } = new List<Subcategory>();
         public virtual ICollection<Cashflow> Cashflows { get; set; } = new List<Cashflow>();
 
-        public bool CanEdit { get; set; } = true;
+        // public bool CanEdit { get; set; } = true;
+        //
+        // public bool Enabled { get; set; } = true;
 
-        public bool Enabled { get; set; } = true;
+        // [ForeignKey("User")]
+        public int UserID { get; set; }
+        public User User { get; set; }
+
+        public string Description { get; set; }
     }
 }

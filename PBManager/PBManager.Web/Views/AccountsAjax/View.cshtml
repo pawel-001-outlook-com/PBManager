@@ -1,0 +1,161 @@
+﻿@model PBManager.Dto.ViewModels.AccountViewModel
+
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        @ViewBag.Title
+        <br /><small>Manage selected account</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href=""><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="@Url.Action("Index", "Accounts")">Accounts</a></li>
+        <li class="active">@ViewBag.Title</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <!-- box -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Account details</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.UserId)
+                                            @Html.TextBoxFor(a => a.UserId, new { Class = "form-control", Readonly = "readonly" })
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.Name)
+                                            @Html.TextBoxFor(a => a.Name, new { Class = "form-control", Readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.InitialBalance)
+                                            @Html.TextBoxFor(a => a.InitialBalance, new { Class = "form-control", Readonly = "readonly", Value = Model.InitialBalance.ToString("F2") })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.Balance)
+                                            @Html.TextBoxFor(a => a.Balance, new { Class = "form-control", Readonly = "readonly", Value = Model.Balance.ToString("F2") })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.Description)
+                                            @Html.TextAreaFor(a => a.Description, new { Class = "form-control", Readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+
+                                </div>
+                                <br />
+
+                                <a href="@Url.Action("Edit", "Accounts", new {Id = Model.Id})" class="btn btn-sm btn-warning btn-flat pull-left"><i class="fa fa-pencil-square-o"></i> Edit account</a>
+                                <a href="@Url.Action("Delete", "Accounts", new {Id = Model.Id})" class="btn btn-sm btn-danger btn-flat pull-left"><i class="fa fa-trash-o"></i> Delete account</a>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+        </div>
+    </div>
+
+
+    <!-- table-box -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Account data</h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                    <i class="fa fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table class="table table-bordered table-striped datatable"
+                   style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Cashflow description</th>
+                        <th>Cashflow Date</th>
+                        <th>Value</th>
+                        <th>Category</th>
+                        <th>Subcategory</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cf in Model.Cashflows)
+                    {
+                        <tr>
+                            <td>@cf.Description</td>
+                            <td>@cf.AccountingDate.ToShortDateString()</td>
+                            <td>@cf.Value.ToString("F2")</td>
+                            <td>
+                                @if (cf.Category == null)
+                                {
+                                    <span class="label label-warning">no category</span>
+                                }
+                                @if (cf.Category != null)
+                                {
+                                    @cf.Category.Name
+                                }
+                            </td>
+                            <td>
+                                @if (cf.Subcategory == null)
+                                {
+                                    <span class="label label-warning">no subcategory</span>
+                                }
+                                @if (cf.Subcategory != null)
+                                {
+                                    @cf.Subcategory.Name
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- /.body -->
+        <div class="box-footer clearfix">
+            <a href="@Url.Action("New", "Cashflows")" class="btn btn-sm btn-info btn-flat pull-left"><i class="fa fa-plus"></i> Add cashflow</a>
+        </div>
+        <!-- /.box-footer -->
+    </div>
+    <!-- ./table-box -->
+</section>
+<!-- /.content -->

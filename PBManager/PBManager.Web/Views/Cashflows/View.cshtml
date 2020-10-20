@@ -1,0 +1,157 @@
+﻿@model PBManager.Dto.ViewModels.CashflowViewModel
+@{
+    ViewBag.Title = "Cashflow details";
+
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <br /><small>View detailed cashflow</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href=""><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="@Url.Action("Index", "Cashflows")">Cashflows</a></li>
+            <li class="active">@ViewBag.Title</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form role="form"><br />
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.Id)
+                                                @Html.TextBoxFor(m => m.Id, new { Class = "form-control", Readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                    @* </div> *@
+                                    @* *@
+                                    @* <div class="row"> *@
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Name)
+                                            @Html.TextBoxFor(m => m.Name, new { Class = "form-control", Readonly = "readonly" })
+                                        </div>
+                                    </div>
+
+                                            
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(m => m.Category.Name)
+                                                    @Html.TextBoxFor(m => m.Category.Name, new { Class = "form-control", Readonly = "readonly" })
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.Description)
+                                                @Html.TextAreaFor(m => m.Description, new { Class = "form-control" , Readonly = "readonly" } )
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.AccountingDate)
+                                                @* @Html.TextBoxFor(m => m.AccountingDate, new { Class = "form-control", Type = "date" , Readonly = "readonly" }) *@
+                                                @Html.TextBox(@Model.AccountingDate.ToString() , Model.AccountingDate.ToShortDateString(), new { Class = "form-control", Readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.Value)
+                                                @Html.TextBoxFor(m => m.Value, new { Class = "form-control", Readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.CategoryName)
+                                                @Html.TextBoxFor(m => m.CategoryName, new { Class = "form-control", Readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.SubcategoryName)
+                                                @Html.TextBoxFor(m => m.SubcategoryName, new { Class = "form-control", Readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.ProjectName)
+                                                @Html.TextBoxFor(m => m.ProjectName, new { Class = "form-control", Readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                    <a href="@Url.Action("Edit", "Cashflows", new { Id = Model.Id})" class="btn btn-sm btn-warning btn-flat pull-left"><i class="fa fa-pencil-square-o"></i> Edit </a>
+                                    <a href="@Url.Action("Delete", "Cashflows", new { Id = Model.Id})" class="btn btn-sm btn-danger btn-flat pull-left"><i class="fa fa-trash-o"></i> Delete </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            
+        <div class="col-md-3"></div>
+
+            <div class="col-md-3">
+                <!-- table-box -->
+                @* <div class="box box-info"> *@
+                    @* <div class="box-header with-border"> *@
+                    @*     <h3 class="box-title">Quick actions</h3> *@
+                    @*     <div class="box-tools pull-right"> *@
+                    @*         <button type="button" class="btn btn-box-tool" data-widget="collapse"> *@
+                    @*             <i class="fa fa-minus"></i> *@
+                    @*         </button> *@
+                    @*     </div> *@
+                    @* </div> *@
+                    <!-- /.box-header -->
+                    @* <div class="box-body"> *@
+                        @* <div class="list-group"> *@
+                            @* <a href="@Url.Action("View", "Accounts", new {Id = Model.Account.Id})" class="list-group-item"><i class="fa fa-external-link"></i> &nbsp; View account</a> *@
+                            @* <a href="@Url.Action("View", "Categories", new { Id = Model.Category.Id })" class="list-group-item"><i class="fa fa-external-link"></i> &nbsp; View category</a> *@
+                            @* <a href="@Url.Action("View", "Subcategories", new { Id = Model.Subcategory.Id })" class="list-group-item"><i class="fa fa-external-link"></i> &nbsp; View subcategory</a> *@
+                            @if (Model.Project != null)
+                            {
+@*                                 <a href="@Url.Action("View", "Projects", new { Id = Model.Project.Id })" class="list-group-item"><i class="fa fa-external-link"></i> &nbsp; View project</a> *@
+                            }
+                            @*                             @if (Model.Invoice != null) *@
+                            @*                             { *@
+                            @*                                 <a href="@Url.Action("View", "CreditCards", new { Id = Model.Invoice.CreditCard.Id })" class="list-group-item"><i class="fa fa-external-link"></i> &nbsp; View credit card</a> *@
+                            @*                             } *@
+                        @* </div> *@
+                    @* </div> *@
+                    <!-- /.body -->
+                @* </div> *@
+                <!-- ./table-box -->
+            </div>
+        </div>
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

@@ -1,0 +1,81 @@
+﻿@using PBManager.Services.Exensions
+@using WebHelpers.Mvc5
+
+<aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+            
+            
+            <li>
+                @Ajax.RawActionLink("<i class=\"fa fa-circle-o\"></i>Accounts AJAX"
+                    , "Index"
+                    , "AccountsAjax"
+                    ,new {}
+                    , new AjaxOptions { UpdateTargetId = "AccountsAjaxDiv", InsertionMode = InsertionMode.Replace, HttpMethod = "Get" }
+                    , new{}
+                    )
+
+            </li>
+
+            <li>
+                <a href="@Url.Action("Index", "Home")"><i class="fa fa-tachometer"></i> <span>Home</span></a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Accounts")"><i class="fa fa-circle-o"></i> <span>Accounts</span></a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Cashflows")"><i class="fa fa-circle-o"></i> <span>Cashflows</span></a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Projects")"><i class="fa fa-circle-o"></i> <span>Projects</span></a>
+            </li>
+
+            <li>
+                <a href="@Url.Action("Index", "Categories")"><i class="fa fa-circle-o"></i> Categories</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Subcategories")"><i class="fa fa-circle-o"></i> Subcategories</a>
+            </li>
+
+
+            <li>
+                <a href="@Url.Action("Index", "Reports")"><i class="fa fa-circle-o"></i> Reports</a>
+            </li>
+
+
+            <li>
+                <a href="@Url.Action("Index", "AccountChartReports")"><i class="fa fa-circle-o"></i> AccountChartReports</a>
+            </li>
+
+            <li>
+                <a href="@Url.Action("Index", "CategoryChartReports")"><i class="fa fa-circle-o"></i> CategoryChartReports</a>
+            </li>
+
+
+
+            @* <li class="treeview"> *@
+            @*     <a href="#"> *@
+            @*         <i class="fa fa-file-excel-o"></i> <span>Reports</span> *@
+            @*         <span class="pull-right-container"> *@
+            @*             <i class="fa fa-angle-left pull-right"></i> *@
+            @*         </span> *@
+            @*     </a> *@
+            @*     <ul class="treeview-menu"> *@
+            @*         <li><a href="@Url.Action("CashflowStatement", "Reports")"><i class="fa fa-circle-o"></i> Bank statement</a></li> *@
+            @*     </ul> *@
+            @* </li> *@
+            @* <li class="treeview"> *@
+            @*     <a href="#"> *@
+            @*         <i class="fa fa-cogs"></i> <span>Manage</span> *@
+            @*         <span class="pull-right-container"> *@
+            @*             <i class="fa fa-angle-left pull-right"></i> *@
+            @*         </span> *@
+            @*     </a> *@
+            @*     $1$ <ul class="treeview-menu"> #1# *@
+            @*     $1$     <li><a href="@Url.Action("Index", "Categories")"><i class="fa fa-circle-o"></i> Categories</a></li> #1# *@
+            @*     $1$     <li><a href="@Url.Action("Index", "Subcategories")"><i class="fa fa-circle-o"></i> Subcategories</a></li> #1# *@
+            @*     $1$ </ul> #1# *@
+            @* </li> *@
+        </ul>
+    </section>
+</aside>
