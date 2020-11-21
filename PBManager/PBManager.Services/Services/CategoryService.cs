@@ -1,0 +1,99 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using PBManager.Core.Models;
+using PBManager.DAL.Contracts;
+using PBManager.Services.Contracts;
+using Unity.Attributes;
+
+namespace PBManager.Services.Helpers
+{
+    public class CategoryService : ICategoryService
+    {
+        private readonly IUnitOfWork _unitOfWork;
+
+
+        public CategoryService()
+        {
+        }
+
+        [InjectionConstructor]
+        public CategoryService(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
+
+        public IEnumerable<Category> GetCategoriesAndUser(int userId)
+        {
+            return _unitOfWork.categories.GetCategoriesAndUser(userId);
+        }
+
+
+        public void Add(Category category)
+        {
+            var nameExists = _unitOfWork.categories.GetCategoryByName(category.Name, category.Type) != null;
+
+            if (!nameExists)
+            {
+                _unitOfWork.categories.Add(category);
+                _unitOfWork.Complete();
+            }
+            else
+            {
+                throw new Exception($"Already exists a category with name {category.Name}");
+            }
+        }
+
+
+        public void Update(Category category)
+        {
+            var currentCategory = GetById(category.Id);
+
+            var quantity = _unitOfWork.categories.GetCategoriesByName(category.Name)
+                .Count(c => !c.Id.Equals(currentCategory.Id));
+
+            if (quantity.Equals(0))
+            {
+                _unitOfWork.categories.Update(category);
+                _unitOfWork.Complete();
+            }
+            else
+            {
+                throw new Exception($"Already exists a {category.Type} category with name {category.Name}");
+            }
+        }
+
+
+        public Category GetById(int id)
+        {
+            var category = _unitOfWork.categories.GetCategoryById(id);
+
+            if (category != null)
+                return category;
+            throw new Exception("This category not exists");
+        }
+
+
+        public void Remove(int id)
+        {
+            var category = GetById(id);
+
+            _unitOfWork.subcategories.Delete(category.Subcategories);
+            _unitOfWork.categories.Delete(category);
+            _unitOfWork.Complete();
+        }
+
+
+        public int GetTotalCount()
+        {
+            return _unitOfWork.categories.GetTotalCount();
+        }
+
+
+        public int GetFilteredCount(string searchValue)
+        {
+            return _unitOfWork.categories.GetFilteredCount(searchValue);
+        }
+    }
+}

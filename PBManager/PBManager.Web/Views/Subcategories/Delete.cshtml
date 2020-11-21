@@ -1,0 +1,63 @@
+﻿@model PBManager.Dto.ViewModels.SubcategoryViewModel
+@{
+    ViewBag.Title = "Delete subcategory";
+}
+
+<!-- Main content -->
+<section class="content">
+    <!-- box -->
+    <div class="box box-danger">
+        <div class="box-body">
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+                This operation can not be undone!
+            </div>
+            <dl class="dl-horizontal">
+                <dt>Subcategory name</dt>
+                <dd>@Html.DisplayFor(m => m.Name)</dd>
+
+                <dt>Parent category name</dt>
+                <dd>@Html.DisplayFor(m => m.Category.Name)</dd>
+            </dl>
+
+            <form id="subcategoryDeleteForm">
+                @Html.HiddenFor(m => m.Id)
+                @Html.AntiForgeryToken()
+                <a href="#" class="btn btn-flat btn-danger" id="btnDelete"><i class="fa fa-trash-o"></i> Delete</a>
+            </form>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</section>
+<!-- /.content -->
+
+
+<script>
+
+    $(document).ready(function() {
+
+        $("#btnDelete").click(function() {
+
+            var subcategoryId = $("#Id").val();
+
+            $.ajax({
+                url: "/api/subcategories?id=" + subcategoryId,
+                method: "DELETE",
+                success: function() {
+                    $("#subcategoryDeleteModal").modal("hide");
+                    $("#tblSubcategory").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+        });
+
+    })
+
+
+</script>

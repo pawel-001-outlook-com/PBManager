@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+}
+
+@model PBManager.Dto.ViewModels.LoginViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log in | PBManager</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    @Styles.Render("~/Bundles/css")
+
+
+</head>
+
+
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <b>PBM</b>anager
+    </div><!-- /.login-logo -->
+
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+
+        @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+        <form action="@Url.Action("Login", "Users")" method="post">
+            <div class="form-group has-feedback">
+                @Html.TextBoxFor(m => m.UserName, new {type = "text", @class = "form-control", placeholder = "User name"})
+                @Html.ValidationMessageFor(m => m.UserName, "", new {Class = "text-danger"})
+                @* <input type="text" class="form-control" placeholder="User name"> *@
+                <span class="glyphicon glyphicon-circle-arrow-left form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                @Html.PasswordFor(m => m.Password, new {type = "password", @class = "form-control", placeholder = "User password"})
+                @Html.ValidationMessageFor(m => m.Password, "", new {Class = "text-danger"})
+                @* <input type="password" class="form-control" placeholder="Password"> *@
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+                @* <div class="row"> *@
+                @* <label class="control-label col-md-6" for="RememberMe">Remember Me</label> *@
+                @* <div class="col-md-10"> *@
+                @* <div class="icheck"> *@
+                @Html.LabelFor(m => m.RememberMe)
+                @Html.EditorFor(model => model.RememberMe)
+
+
+
+                @Html.ValidationMessageFor(model => model.RememberMe, "", new {@class = "text-danger"})
+                @* </div> *@
+                @* </div> *@
+                @* </div> *@
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-8">
+                </div><!-- /.col -->
+                <div class="col-xs-4">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                </div><!-- /.col -->
+            </div>
+
+
+        </form>
+
+        @Html.ActionLink("New User", "Register", null, new {@class = "text-center"})
+
+    </div><!-- /.login-box-body -->
+</div><!-- /.login-box -->
+
+
+@Scripts.Render("~/Bundles/js")
+@Scripts.Render("~/bundles/jqueryval")
+
+
+</body>
+</html>

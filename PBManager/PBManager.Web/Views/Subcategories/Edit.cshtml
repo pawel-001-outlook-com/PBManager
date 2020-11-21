@@ -1,0 +1,81 @@
+﻿@model PBManager.Dto.ViewModels.SubcategoryViewModel
+@{
+    var categoriesSelectList = (SelectList) TempData["categoriesSelectList"];
+}
+
+
+<!-- Main content -->
+<section class="content">
+    <!-- box -->
+    <div class="box box-success">
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="subcategoryEditForm">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Name, "Subcategory name")
+                            @Html.TextBoxFor(m => m.Name, new {Class = "form-control"})
+                            @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.CategoryId, "Parent category name")
+                                    @Html.DropDownListFor(m => m.CategoryId, categoriesSelectList, "(Choose one)", new {Class = "form-control"})
+                                    <br>@Html.ValidationMessageFor(m => m.CategoryId, "", new {Class = "text-red"})
+                                </div>
+                            </div>
+                        </div>
+
+                        @Html.HiddenFor(m => m.Id)
+                        @Html.AntiForgeryToken()
+                        <a href="#" id="btnSubmit" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</section>
+<!-- /.content -->
+
+
+@Scripts.Render("~/bundles/jqueryval")
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+
+            var subcategoryformdata = $("#subcategoryEditForm").serialize();
+
+            if (!$("#subcategoryEditForm").valid()) {
+                alert("aaaa");
+                return false;
+            }
+
+
+            $.ajax({
+                type: "POST",
+                url: "/Subcategories/Edit",
+                data: subcategoryformdata,
+                success: function() {
+                    $("#subcategoryEditModal").modal("hide");
+                    toastr.success("Success");
+                    $("#tblSubcategory").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+            });
+        });
+
+    });
+
+</script>

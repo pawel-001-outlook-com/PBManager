@@ -1,0 +1,100 @@
+﻿@model PBManager.Dto.ViewModels.AccountViewModel
+
+<!-- box -->
+<div class="box box-success">
+    <div class="box-body">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="accountEditForm">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Id)
+                                @Html.TextBoxFor(m => m.Id, new {Class = "form-control", Readonly = "readonly"})
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Name)
+                                @Html.TextBoxFor(m => m.Name, new {Class = "form-control"})
+                                @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Description)
+                                @Html.TextAreaFor(m => m.Description, new {Class = "form-control"})
+                                @Html.ValidationMessageFor(m => m.Description, "", new {Class = "text-red"})
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(a => a.InitialBalance)
+                                @Html.TextBoxFor(a => a.InitialBalance, new {Class = "form-control"})
+                                @Html.ValidationMessageFor(m => m.InitialBalance, "", new {Class = "text-red"})
+                            </div>
+                        </div>
+                    </div>
+
+                    @Html.HiddenFor(m => m.UserId)
+                    @Html.AntiForgeryToken()
+                    <a href="#" id="btnSubmit" class="btn btn-primary btn-flat pull-left"><i class="fa fa-floppy-o"></i> Save</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /.box-body -->
+</div>
+<!-- /.box -->
+
+
+@* @Scripts.Render("~/Bundles/js") *@
+@Scripts.Render("~/bundles/jqueryval")
+
+<script>
+
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+
+            var accountformdata = $("#accountEditForm").serialize();
+            if (!$("#accountEditForm").valid()) {
+
+                return false;
+            }
+
+            $.ajax({
+                    type: "POST",
+                    url: "/Accounts/Edit",
+                    data: accountformdata
+                })
+                .done(function() {
+                    $("#accountEditModal").modal("hide");
+                    toastr.success("Success");
+                    $("#tblPerson").DataTable().ajax.reload();
+                })
+                .fail(function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                });
+
+
+        });
+
+    })
+
+
+</script>

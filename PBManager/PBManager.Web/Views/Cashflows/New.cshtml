@@ -1,0 +1,169 @@
+﻿@model PBManager.Dto.ViewModels.CashflowViewModel
+@{
+    var categoriesSelectList = (SelectList) TempData["categoriesSelectList"];
+    var accountsSelectList = (SelectList) TempData["accountsSelectList"];
+    var subcategoriesSelectList = new SelectList(new List<string>(), "Id", "Name", new {});
+    var projectsSelectList = (SelectList) TempData["projectsSelectList"];
+}
+
+<!-- Main content -->
+<section class="content">
+
+    <div class="row">
+        <div class="col-md-9">
+            <!-- box -->
+            <div class="box box-default">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form id="cashflowForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Name)
+                                            @Html.TextBoxFor(m => m.Name, new {Class = "form-control"})
+                                            @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Description)
+                                            @Html.TextAreaFor(m => m.Description, new {Class = "form-control"})
+                                            @Html.ValidationMessageFor(m => m.Description, "", new {Class = "text-red"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.AccountingDate)
+                                            @Html.TextBoxFor(m => m.AccountingDate, new {Class = "form-control", Type = "date", Value = DateTime.Now.ToShortDateString()})
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Value)
+                                            @Html.TextBoxFor(m => m.Value, new {Class = "form-control"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.AccountId)
+                                            @Html.DropDownListFor(m => m.AccountId, accountsSelectList, "(Choose one)", new {Class = "form-control"})
+                                            @Html.ValidationMessageFor(m => m.AccountId, "", new {Class = "text-red"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CategoryId)
+                                            @Html.DropDownListFor(m => m.CategoryId, categoriesSelectList, "(Choose one)", new {Class = "form-control"})
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.SubcategoryId)
+                                            @Html.DropDownListFor(m => m.SubcategoryId, subcategoriesSelectList, "(Choose one)", new {Class = "form-control"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.ProjectId)
+                                            @Html.DropDownListFor(m => m.ProjectId, projectsSelectList, "(Optional)", new {Class = "form-control"})
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                @Html.AntiForgeryToken()
+                                <a href="#" id="btnSubmit" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+<!-- /.content -->
+@* @Scripts.Render("~/Bundles/js") *@
+@Scripts.Render("~/bundles/jqueryval")
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+            var cashflowformdata = $("#cashflowForm").serialize();
+
+            if (!$("#cashflowForm").valid()) {
+
+                return false;
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/Cashflows/New",
+                data: cashflowformdata,
+                success: function() {
+                    $("#cashflowAddNewModal").modal("hide");
+                    $("#tblCashflow").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+        });
+
+
+        $('#CategoryId').change(
+            function() {
+                var selectedCategory = $('#CategoryId').val();
+                var subcategorySelect = $('#SubcategoryId');
+                subcategorySelect.empty();
+                if (selectedCategory != null && selectedCategory != '') {
+                    $.getJSON('@Url.Action("GetCategoryAndSubcategories")',
+                        { categoryId: selectedCategory },
+                        function(subcategories) {
+                            if (subcategories != null && !jQuery.isEmptyObject(subcategories)) {
+                                subcategorySelect.append($('<option/>',
+                                    {
+                                        value: "",
+                                        text: "(Choose one [updated])"
+                                    }));
+                                $.each(subcategories,
+                                    function(index, subcategory) {
+                                        subcategorySelect.append($('<option/>',
+                                            {
+                                                value: subcategory.Value,
+                                                text: subcategory.Text
+                                            }));
+                                    });
+                            };
+                        });
+                }
+            });
+
+    })
+</script>

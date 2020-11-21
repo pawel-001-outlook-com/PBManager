@@ -1,0 +1,78 @@
+﻿@model PBManager.Dto.ViewModels.CategoryViewModel
+
+<!-- Main content -->
+<section class="content">
+    <!-- box -->
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form id="categoryAddNewForm">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Name)
+                                            @Html.TextBoxFor(m => m.Name, new {Class = "form-control"})
+                                            @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Description)
+                                            @Html.TextAreaFor(m => m.Description, new {Class = "form-control"})
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @Html.HiddenFor(m => m.UserId)
+                                @Html.AntiForgeryToken()
+                                <br/>
+                                <a href="#" id="btnSubmit" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</a>
+                            </form><!-- /.form category -->
+
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+            </div><!-- /.box form -->
+        </div>
+    </div>
+</section><!-- /.section content -->
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+            var categoryformdata = $("#categoryAddNewForm").serialize();
+
+            if (!$("#categoryAddNewForm").valid()) {
+
+                return false;
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/Categories/New",
+                data: categoryformdata,
+                success: function() {
+                    $("#categoryAddNewModal").modal("hide");
+                    $("#tblCategory").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+        });
+    })
+</script>

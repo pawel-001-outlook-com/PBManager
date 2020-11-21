@@ -1,0 +1,101 @@
+﻿@model PBManager.Dto.ViewModels.AccountViewModel
+
+
+<section class="content">
+
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <!-- box -->
+            <div class="box box-success">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form id="addNewAccountForm">
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Name)
+                                            @Html.TextBoxFor(m => m.Name, new {@class = "form-control", type = "text", required = "required"})
+                                            @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Description)
+                                            @Html.TextAreaFor(m => m.Description, new {Class = "form-control"})
+                                            @Html.ValidationMessageFor(m => m.Description, "", new {Class = "text-red"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.InitialBalance)
+                                            @Html.TextBoxFor(m => m.InitialBalance, new {Class = "form-control", type = "text", required = "required"})
+                                            @Html.ValidationMessageFor(m => m.InitialBalance, "", new {Class = "text-danger"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @Html.HiddenFor(m => m.UserId)
+
+                                @Html.AntiForgeryToken()
+                                <a href="#" id="btnSubmit" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+
+
+</section>
+<!-- /.content -->
+@* @Scripts.Render("~/Bundles/js") *@
+@Scripts.Render("~/bundles/jqueryval")
+
+<script>
+
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+            var accountformdata = $("#addNewAccountForm").serialize();
+
+            if (!$("#addNewAccountForm").valid()) {
+
+                return false;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "/Accounts/New",
+                data: accountformdata,
+                success: function() {
+                    $("#accountAddNewModal").modal("hide");
+                    $("#tblPerson").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+        });
+
+    })
+
+
+</script>

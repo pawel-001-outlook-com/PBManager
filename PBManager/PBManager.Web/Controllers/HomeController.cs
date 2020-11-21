@@ -1,30 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
+using System.Web.Security;
+using Newtonsoft.Json;
+using PBManager.Dto.ViewModels;
+using PBManager.Services.Helpers;
 
 namespace PBManager.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private AccountService _as = new AccountService();
+
         public ActionResult Index()
         {
-            return View();
-        }
+            // int o = 0;
+            // var i = 1 / o;
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+            var authCookie = HttpContext.Request.Cookies[FormsAuthentication.FormsCookieName];
 
-            return View();
-        }
+            if (authCookie == null) return RedirectToAction("Login", "Users");
+            var cookieValue = authCookie.Value;
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            if (string.IsNullOrWhiteSpace(cookieValue)) return RedirectToAction("Login", "Users");
+            var ticket = FormsAuthentication.Decrypt(cookieValue);
 
-            return View();
+            var userDataString = ticket.UserData;
+
+            var userData =
+                JsonConvert.DeserializeObject<Dictionary<string, string>>(userDataString);
+
+            ViewBag.UserName = UserDataHelper.GetUserName(HttpContext);
+            var dvm = new DashboardViewModel();
+            return View(dvm);
         }
     }
 }

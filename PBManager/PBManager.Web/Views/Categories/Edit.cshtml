@@ -1,0 +1,79 @@
+﻿@model PBManager.Dto.ViewModels.CategoryViewModel
+
+
+<!-- Main content -->
+<section class="content">
+    <!-- box -->
+    <div class="box box-success">
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <form id="categoryEditForm">
+                        <span class="text-red">@Html.ValidationSummary()</span>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Name)
+                            @Html.TextBoxFor(m => m.Name, new {Class = "form-control"})
+                            @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Description)
+                                    @Html.TextAreaFor(m => m.Description, new {Class = "form-control"})
+                                </div>
+                            </div>
+                        </div>
+
+                        @Html.HiddenFor(c => c.UserId)
+                        @Html.HiddenFor(c => c.Id)
+                        @Html.AntiForgeryToken()
+                        <a href="#" id="btnSubmit" class="btn btn-primary btn-flat pull-left"><i class="fa fa-floppy-o"></i> Save</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</section>
+<!-- /.content -->
+
+
+@Scripts.Render("~/bundles/jqueryval")
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+
+            var categoryformdata = $("#categoryEditForm").serialize();
+
+            if (!$("#categoryEditForm").valid()) {
+                return false;
+            }
+
+
+            $.ajax({
+                type: "POST",
+                url: "/Categories/Edit",
+                data: categoryformdata,
+                success: function() {
+                    $("#categoryEditModal").modal("hide");
+                    toastr.success("Success");
+                    $("#tblCategory").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+            });
+        });
+
+
+    });
+
+</script>

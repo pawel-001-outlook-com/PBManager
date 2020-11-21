@@ -1,0 +1,96 @@
+﻿@model PBManager.Dto.ViewModels.ProjectViewModel
+
+<!-- Main content -->
+<section class="content">
+    <!-- box -->
+    <div class="box box-success">
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="projectAddNewForm">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Name)
+                                    @Html.TextBoxFor(m => m.Name, "", new {Class = "form-control"})
+                                    @Html.ValidationMessageFor(m => m.Name, "", new {Class = "text-red"})
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.StartDate)
+                                    @Html.TextBoxFor(m => m.StartDate, DateTime.Now.ToShortDateString(), new {Class = "form-control", Readonly = "readonly"})
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Description)
+                                    @Html.TextAreaFor(m => m.Description, new {Class = "form-control"})
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Budget)
+                                    @Html.TextAreaFor(m => m.Budget, new {Class = "form-control"})
+                                    @Html.ValidationMessageFor(m => m.Budget, "", new {Class = "text-red"})
+                                </div>
+                            </div>
+                        </div>
+
+
+                        @Html.HiddenFor(m => m.UserId)
+                        @Html.AntiForgeryToken()
+                        <a href="#" id="btnSubmit" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</section>
+<!-- /.content -->
+
+
+@Scripts.Render("~/bundles/jqueryval")
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+            var projectformdata = $("#projectAddNewForm").serialize();
+
+            if (!$("#projectAddNewForm").valid()) {
+
+                return false;
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/Projects/New",
+                data: projectformdata,
+                success: function() {
+                    $("#projectAddNewModal").modal("hide");
+                    $("#tblProject").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+        });
+    })
+</script>

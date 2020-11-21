@@ -1,0 +1,60 @@
+﻿<aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+
+
+            @*<li>
+                @Ajax.RawActionLink("<i class=\"fa fa-circle-o\"></i>Accounts AJAX"
+                    , "Index"
+                    , "AccountsAjax"
+                    ,new {}
+                    , new AjaxOptions { UpdateTargetId = "AccountsAjaxDiv", InsertionMode = InsertionMode.Replace, HttpMethod = "Get" }
+                    , new{}
+                    )
+
+            </li>*@
+
+            <li>
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fa fa-circle-o"></i> <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Accounts")">
+                    <i class="fa fa-circle-o"></i> <span>Accounts</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Cashflows")">
+                    <i class="fa fa-circle-o"></i> <span>Cashflows</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Projects")">
+                    <i class="fa fa-circle-o"></i> <span>Projects</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="@Url.Action("Index", "Categories")"><i class="fa fa-circle-o"></i> Categories</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Subcategories")"><i class="fa fa-circle-o"></i> Subcategories</a>
+            </li>
+
+            <li>
+                <a href="@Url.Action("Index", "DashboardMain")"><i class="fa fa-circle-o"></i> Dashboard</a>
+            </li>
+
+
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <li>
+                    <a href="@Url.Action("Index", "AdminHome", new {Area = "Admin"}, null)">
+                        <i class="fa fa-circle-o text-red"></i ><span class="text-red"> Admin panel</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </section>
+</aside>

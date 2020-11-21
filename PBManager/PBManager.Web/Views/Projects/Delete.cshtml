@@ -1,0 +1,63 @@
+﻿@model PBManager.Dto.ViewModels.ProjectViewModel
+
+<!-- Main content -->
+<section class="content">
+    <!-- box -->
+    <div class="box box-danger">
+        <div class="box-body">
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-warning"></i> !!! WARNING !!! </h4>
+                You are going to delete selected item.
+                <br/><br/>This operation cannot be reverted.
+                <br>
+            </div>
+            <dl class="dl-horizontal">
+                <dt>@Html.DisplayNameFor(m => m.Name)</dt>
+                <dd>@Html.DisplayFor(m => m.Name)</dd>
+                <dt>@Html.DisplayNameFor(m => m.StartDate)</dt>
+                <dd>@Convert.ToString(string.Format("{0:yyyy-MM-dd}", Model.StartDate))</dd>
+                <dt>@Html.DisplayNameFor(m => m.Description)</dt>
+                <dd>@Html.DisplayFor(m => m.Description)</dd>
+            </dl>
+            <form role="form">
+
+                @Html.HiddenFor(m => m.UserId)
+                @Html.HiddenFor(m => m.Id)
+                @Html.AntiForgeryToken()
+                <a href="#" class="btn btn-flat btn-danger" id="btnDelete"><i class="fa fa-trash-o"></i> Delete</a>
+            </form>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</section>
+<!-- /.content -->
+
+<script>
+
+    $(document).ready(function() {
+
+        $("#btnDelete").click(function() {
+
+            var projectId = $("#Id").val();
+
+            $.ajax({
+                url: "/api/projects?id=" + projectId,
+                method: "DELETE",
+                success: function() {
+                    $("#projectDeleteModal").modal("hide");
+                    $("#tblProject").DataTable().ajax.reload();
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+        });
+
+    })
+
+
+</script>

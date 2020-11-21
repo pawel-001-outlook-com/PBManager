@@ -1,0 +1,213 @@
+﻿@model IEnumerable<PBManager.Dto.ViewModels.ProjectViewModel>
+
+@{
+    ViewBag.Title = "Projects";
+}
+
+<div class="content-wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <section class="content-header">
+        <!-- Content Header (Page header) -->
+        <h1>
+            @ViewBag.Title
+            <br><small>Manage projects</small>
+        </h1>
+    </section>
+    <section class="content">
+        <!-- Main content -->
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="box box-primary">
+                    <!-- box -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <a href="#" onclick="AddProject()" class="btn btn-flat btn-block btn-success"><i class="fa fa-plus"></i> New project</a>
+                            </div>
+                        </div>
+                        <br/>
+                        <table class="table table-hover data-table" style="width: 100%;" id="tblProject">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Start date</th>
+                                <th>Total expenses</th>
+                                <th>Budget</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+
+
+    <div class="modal fade" id="projectViewModal">
+        <div class="modal-dialog" style="width: 800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title">Project details</h3>
+                </div>
+                <div class="modal-body" id="projectViewModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="projectEditModal">
+        <div class="modal-dialog" style="width: 800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title">Edit project</h3>
+                </div>
+                <div class="modal-body" id="projectEditModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="projectDeleteModal">
+        <div class="modal-dialog" style="width: 800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title">Edit project</h3>
+                </div>
+                <div class="modal-body" id="projectDeleteModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectAddNewModal">
+        <div class="modal-dialog" style="width: 800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title content-header">Add project</h3>
+                </div>
+                <div class="modal-body" id="projectAddNewModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- /.content-wrapper -->
+
+
+@section Scripts{
+
+    <script src="~/Content/AdminLte2/plugins/datatables/jquery.dataTables.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $.ajaxSetup({
+                cache: false
+            });
+
+            $("#tblProject")
+                .DataTable({
+                    "serverSide": true,
+                    "ajax": "/Projects/ProjectData",
+                    columnDefs: [{ orderable: false, targets: [4] }],
+                    "columns": [
+                        { "data": "Name" },
+                        { "data": "StartDate" },
+                        { "data": "TotalExpenses" },
+                        { "data": "Budget" },
+                        {
+                            data: null,
+                            render: function(data, type, row) {
+                                return "<div class='col-md-12'><div class='progress sm'> " +
+                                    "<div class='progress-bar progress-bar-danger' style='width:" +
+                                    row.TotalExpenses +
+                                    "%'  aria-valuemin=0" +
+                                    " aria-valuemax=" +
+                                    row.Budget +
+                                    "></div></div></div>";
+                            }
+                        },
+                        {
+                            data: null,
+                            render: function(data, type, row) {
+                                return "<a href+'#' onclick='ShowProject(" + row.Id + ")' class='btn btn-flat btn-default'><i class='fa fa-eye'></i> View</a>" + "<a href='#' onclick='EditProject(" + row.Id + ")' class='btn btn-flat btn-default'><i class='fa fa-pencil-square-o'></i> Edit</a>" + "<a href='#' onclick='DeleteProject(" + row.Id + ")' class='btn btn-flat btn-danger'><i class='fa fa-trash-o'></i> Delete</a> ";
+                            }
+                        }
+                    ],
+                    searchDelay: 2000
+                });
+        });
+
+
+        var ShowProject = function(projectId) {
+
+            var url = "/Projects/View/" + projectId;
+
+            $("#projectViewModalBody").load(url,
+                function() {
+                    $("#projectViewModal").modal("show");
+
+                });
+        };
+
+        var EditProject = function(projectId) {
+
+            var url = "/Projects/Edit/" + projectId;
+
+            $("#projectEditModalBody").load(url,
+                function() {
+                    $("#projectEditModal").modal("show");
+
+                });
+        };
+
+
+        var DeleteProject = function(projectId) {
+
+            var url = "/Projects/Delete/" + projectId;
+
+            $("#projectDeleteModalBody").load(url,
+                function() {
+                    $("#projectDeleteModal").modal("show");
+
+                });
+        };
+
+        var AddProject = function() {
+
+            var url = "/Projects/New/";
+
+            $("#projectAddNewModalBody").load(url,
+                function() {
+                    $("#projectAddNewModal").modal("show");
+
+                });
+        };
+
+
+    </script>
+
+
+}

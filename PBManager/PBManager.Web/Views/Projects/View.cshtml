@@ -1,0 +1,108 @@
+﻿@model PBManager.Dto.ViewModels.ProjectViewModel
+
+
+<!-- Main content -->
+<section class="content">
+
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <!-- box -->
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Id)
+                                            @Html.TextBoxFor(m => m.Id, new {Class = "form-control", Readonly = "readonly"})
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Name)
+                                            @Html.TextBoxFor(m => m.Name, new {Class = "form-control", Readonly = "readonly"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.StartDate)
+                                            @Html.TextBoxFor(m => m.StartDate, Model.StartDate.ToShortDateString(), new {Class = "form-control", Readonly = "readonly"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Description)
+                                            @Html.TextAreaFor(m => m.Description, new {Class = "form-control", Readonly = "readonly"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.ProjectTotalValue)
+                                            @Html.TextBoxFor(m => m.ProjectTotalValue, new {Class = "form-control", Readonly = "readonly"})
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+        </div>
+    </div>
+
+
+    <!-- table-box -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Project cashflows</h3>
+            <div class="box-tools pull-right">
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table class="table table-bordered table-striped datatable" style="width: 100%;">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>AccountingDate</th>
+                    <th>Total value</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var cashflow in Model.Cashflows)
+                {
+                    <tr>
+                        <td>@cashflow.Name</td>
+                        <td>@cashflow.AccountingDate.ToShortDateString()</td>
+                        <td>@cashflow.Value.ToString("F2")</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <!-- /.body -->
+    </div>
+    <!-- ./table-box -->
+</section>
+<!-- /.content -->

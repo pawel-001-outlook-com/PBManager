@@ -1,0 +1,105 @@
+﻿@model PBManager.Dto.ViewModels.CashflowViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Cashflow details</h3>
+                <div class="box-tools pull-right">
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form role="form">
+                            <br/>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Id)
+                                        @Html.TextBoxFor(m => m.Id, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Name)
+                                        @Html.TextBoxFor(m => m.Name, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Category.Name)
+                                        @Html.TextBoxFor(m => m.Category.Name, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Description)
+                                        @Html.TextAreaFor(m => m.Description, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.AccountingDate)
+                                        @* @Html.TextBoxFor(m => m.AccountingDate, new { Class = "form-control", Type = "date" , Readonly = "readonly" }) *@
+                                        @Html.TextBox(Model.AccountingDate.ToString(), Model.AccountingDate.ToShortDateString(), new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Value)
+                                        @Html.TextBoxFor(m => m.Value, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.CategoryName)
+                                        @Html.TextBoxFor(m => m.CategoryName, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.SubcategoryName)
+                                        @Html.TextBoxFor(m => m.SubcategoryName, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.ProjectName)
+                                        @Html.TextBoxFor(m => m.ProjectName, new {Class = "form-control", Readonly = "readonly"})
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+
+    <div class="col-md-3"></div>
+
+    <div class="col-md-3">
+    </div>
+</div>
