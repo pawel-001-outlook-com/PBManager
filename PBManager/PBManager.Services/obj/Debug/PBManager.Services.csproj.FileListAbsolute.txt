@@ -1,0 +1,268 @@
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+C:\Users\pawel\Source\Repos\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+F:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+F:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+F:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+F:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+F:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+F:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+H:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+H:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+H:\PBM test\PBManager\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+H:\PBM test\PBManager 20200709_1124\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+H:\PBM test\PBManager 20200710_2121\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+H:\PBM test\PBManager 20200711_1406\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.xml
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200711_1807\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.xml
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200713_1005\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.xml
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200713_1251\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.xml
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200714_0854\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll.config
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.Services.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\EntityFramework.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.Core.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.Core.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.DAL.dll.config
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\PBManager.Dto.pdb
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\EntityFramework.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\EntityFramework.SqlServer.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.Helpers.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.Mvc.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.Razor.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\bin\Debug\System.Web.WebPages.Razor.xml
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csprojAssemblyReference.cache
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CoreCompileInputs.cache
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\obj\Debug\PBManager.Services.csproj.CopyComplete
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\obj\Debug\PBManager.Services.dll
+I:\PBM test\PBManager 20200714_1134\PBManager\PBManager.Services\obj\Debug\PBManager.Services.pdb
