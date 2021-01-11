@@ -1,0 +1,93 @@
+﻿@model PBManager.Dto.ViewModels.SubcategoryViewModel
+@{
+    SelectList categoriesSelectList = (SelectList)TempData["categoriesSelectList"];
+}
+
+
+<!-- Main content -->
+<section class="content">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <!-- box -->
+            <div class="box box-success">
+                <div class="box-body">
+                    <div class="row">
+
+                        <form id="subcategoryAddNewForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Name)
+                                        @Html.TextBoxFor(m => m.Name, new { Class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Name, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.CategoryId)
+                                        @Html.DropDownListFor(m => m.CategoryId, categoriesSelectList, "(Choose one)", new { Class = "form-control" , id= "categoryIdNew"})
+                                        @Html.ValidationMessageFor(m => m.CategoryId, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            @Html.AntiForgeryToken()
+                            <a href="#" id="btnSubmitNewSubcategory" class="btn btn-success btn-flat pull-left"><i class="fa fa-check"></i> Confirm</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+</section>
+<!-- /.content -->
+
+
+
+@Scripts.Render("~/bundles/jqueryval")
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#btnSubmitNewSubcategory").click(function () {
+
+            var subcategoryformdata = $("#subcategoryAddNewForm").serialize();
+
+            if (!$("#subcategoryAddNewForm").valid()) {
+
+                return false;
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/Subcategories/New",
+                data: subcategoryformdata,
+                success: function () {
+                    $("#subcategoryAddNewModal").modal("hide");
+                    if ($("#tblSubcategory") != null) {
+                        $("#tblSubcategory").DataTable().ajax.reload();
+                    }
+                    if ($("#tblCategory") != null) {
+                        $("#tblCategory").DataTable().ajax.reload();
+                    }
+                    toastr.success("Success");
+                },
+                error: function (xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+        });
+
+    })
+</script>
+

@@ -1,0 +1,92 @@
+﻿@model PBManager.Dto.ViewModels.EditUserViewModel
+
+@{
+    ViewBag.Title = "Edit user profile";
+}
+
+
+<div class="content-wrapper">
+    <section class="content-header"></section>
+
+    @if (Model.EditedSuccessfully != null && Model.EditedSuccessfully == false)
+    {
+        <div class="box-body">
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4>	<i class="icon fa fa-check"></i> Error!</h4>
+                Chages were not saved
+            </div>
+        </div>
+    }
+
+    @if (Model.EditedSuccessfully != null && Model.EditedSuccessfully == true)
+    {
+        <div class="box-body">
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4>	<i class="icon fa fa-check"></i> Success!</h4>
+                Profile successfully modified
+            </div>
+        </div>
+    }
+
+
+
+    <section class="content">
+        <div class="register-box">
+            <!-- register-logo -->
+            <div class="register-logo">
+                <b>Edit user data</b>
+            </div><!-- /.register-logo -->
+            <!-- register-box-body -->
+            <div class="register-box-body">
+
+                <form action="@Url.Action("Edit", "Users")" method="post">
+                    @Html.HiddenFor(m => m.Id)
+                    @Html.AntiForgeryToken()
+
+
+                    <div class="form-group has-feedback">
+                        @Html.TextBoxFor(m => m.FirstName, new { @type = "text", @class = "form-control", @placeholder = "FirstName" })
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        @Html.TextBoxFor(m => m.Surname, new { @type = "text", @class = "form-control", @placeholder = "Surname" })
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        @Html.TextBoxFor(m => m.Email, new { @type = "email", @class = "form-control", @placeholder = "Email" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { Class = "text-red" })
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        @Html.PasswordFor(m => m.Password, new { @type = "password", @class = "form-control", @placeholder = "User password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { Class = "text-red" })
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        @Html.PasswordFor(m => m.ConfirmationPassword, new { @type = "password", @class = "form-control", @placeholder = "Confimrtion password" })
+                        @Html.ValidationMessageFor(m => m.ConfirmationPassword, "", new { Class = "text-red" })
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xs-4"></div>
+
+                        <div class="col-xs-4">
+                            <button type="submit" class="btn btn-primary btn-block btn-flat">Save</button>
+                        </div><!-- /.col -->
+
+                    </div>
+                </form>
+
+
+            </div><!-- /.register-box-body -->
+        </div>
+    </section>
+</div>

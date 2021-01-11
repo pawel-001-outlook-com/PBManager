@@ -1,0 +1,60 @@
+﻿@model PBManager.Dto.ViewModels.ReportViewModel
+
+
+<div class="box-body" id="tablaDataId">
+    <table class="table table-bordered table-striped table-hover datatable-export" style="width: 100%;">
+
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Account</th>
+                <th>Category</th>
+                <th>Subcategory</th>
+                <th>Project</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cf in Model.Cashflows)
+            {
+            <tr>
+                <td>@cf.AccountingDate.ToShortDateString()</td>
+                <td>@cf.Name</td>
+                <td>@cf.Value.ToString("F2")</td>
+
+                <td>@cf.Account.Name</td>
+
+                <td>
+                    @if (@cf.Category == null)
+                    {
+                        <span></span>}
+                    @if (@cf.Category != null)
+                    {@cf.Category.Name
+                }
+                </td>
+                <td>
+                    @if (@cf.Subcategory == null)
+                    {
+                        <span></span>}
+                    @if (@cf.Subcategory != null)
+                    {@cf.Subcategory.Name
+                }
+                </td>
+                <td>
+                    @if (@cf.Project == null)
+                    {
+                        <span></span>}
+                    @if (@cf.Project != null)
+                    {@cf.Project.Name
+                }
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script src="~/Content/AdminLte2/plugins/datatables/jquery.dataTables.js"></script>
+<script src="~/Content/js/init.js"></script>

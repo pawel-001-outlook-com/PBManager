@@ -1,4 +1,4 @@
-﻿using System.Web;
+﻿using PBManager.Web.Filters;
 using System.Web.Mvc;
 
 namespace PBManager.Web
@@ -8,6 +8,8 @@ namespace PBManager.Web
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new MainExceptionFilter());
+
         }
     }
 }

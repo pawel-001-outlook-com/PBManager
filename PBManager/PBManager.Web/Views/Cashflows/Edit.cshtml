@@ -1,0 +1,197 @@
+﻿@model PBManager.Dto.ViewModels.CashflowViewModel
+@{
+    SelectList categoriesSelectList = (SelectList)TempData["categoriesSelectList"];
+    SelectList accountsSelectList = (SelectList)TempData["accountsSelectList"];
+
+    SelectList subcategoriesSelectList = new SelectList(new List<string>(), "Id", "Name", new { });
+    if (TempData["subcategoriesSelectList"] != null)
+    {
+        subcategoriesSelectList = (SelectList) TempData["subcategoriesSelectList"];
+    }
+
+    SelectList projectsSelectList = (SelectList)TempData["projectsSelectList"];
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="cashflowEditForm">
+
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Id)
+                                        @Html.TextBoxFor(m => m.Id, new { Class = "form-control", Readonly = "readonly" })
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Name)
+                                        @Html.TextBoxFor(m => m.Name, new { Class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Name, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Description)
+                                        @Html.TextAreaFor(m => m.Description, new { Class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Description, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.AccountingDate)
+                                        @Html.TextBoxFor(m => m.AccountingDate, new { Class = "form-control", Type = "date", Value = Model.AccountingDate.ToShortDateString() })
+                                        @Html.ValidationMessageFor(m => m.AccountingDate, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Value)
+                                        @Html.TextBoxFor(m => m.Value, new { Class = "form-control", Type = "text", Pattern = @"[0-9]+[\,]*[0-9]+" })
+                                        @Html.ValidationMessageFor(m => m.Value, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.AccountId, "Account")
+                                        @Html.DropDownListFor(m => m.AccountId, accountsSelectList, "(Choose one)", new { Class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.AccountId, "", new { Class = "text-red" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.CategoryId, "Category")
+                                        @Html.DropDownListFor(m => m.CategoryId, categoriesSelectList, "(Choose one)", new { Class = "form-control" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.SubcategoryId, "Subcategory")
+                                        @Html.DropDownListFor(m => m.SubcategoryId, subcategoriesSelectList, "(Choose one)", new { Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.ProjectId, "Project")
+                                        @Html.DropDownListFor(m => m.ProjectId, projectsSelectList, "(Optional)", new { Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            @Html.HiddenFor(m => m.Cashflow.Id)
+                            @Html.AntiForgeryToken()
+                            <a href="#" id="btnSubmit" class="btn btn-primary btn-flat pull-left"><i class="fa fa-floppy-o"></i> Save</a>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+
+    <div class="col-md-4"></div>
+
+</div>
+
+
+@* @Scripts.Render("~/Bundles/js") *@
+@Scripts.Render("~/bundles/jqueryval")
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+
+
+            var cashflowformdata = $("#cashflowEditForm").serialize();
+
+            if (!$("#cashflowEditForm").valid()) {
+                return false;
+            }
+
+
+
+            $.ajax({
+                type: "POST",
+                url: "/Cashflows/Edit",
+                data: cashflowformdata,
+                success: function() {
+                    $("#cashflowEditModal").modal("hide");
+                    toastr.success("Success");
+                    $("#tblCashflow").DataTable().ajax.reload();
+                },
+                error: function (xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+            });
+        });
+
+        $('#CategoryId').change(
+            function() {
+                var selectedCategory = $('#CategoryId').val();
+                var subcategorySelect = $('#SubcategoryId');
+                subcategorySelect.empty();
+                if (selectedCategory != null && selectedCategory != '') {
+                    $.getJSON('@Url.Action("GetCategoryAndSubcategories")',
+                        { categoryId: selectedCategory },
+                        function(subcategories) {
+                            if (subcategories != null && !jQuery.isEmptyObject(subcategories)) {
+                                subcategorySelect.append($('<option/>',
+                                    {
+                                        value: "",
+                                        text: "(Choose one [updated])"
+                                    }));
+                                $.each(subcategories,
+                                    function(index, subcategory) {
+                                        subcategorySelect.append($('<option/>',
+                                            {
+                                                value: subcategory.Value,
+                                                text: subcategory.Text
+                                            }));
+                                    });
+                            };
+                        });
+                }
+            });
+    });
+
+</script>

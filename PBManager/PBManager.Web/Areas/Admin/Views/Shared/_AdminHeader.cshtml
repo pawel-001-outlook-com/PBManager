@@ -1,0 +1,41 @@
+﻿<header class="main-header">
+    <a href="@Url.Action("Index", "Home")" class="logo">
+        <span class="logo-mini">PBM</span>
+        <span class="logo-lg">PB Manager</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                
+                <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <!-- The user image in the navbar-->
+                        <span class="glyphicon glyphicon-user"></span>
+                        <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                        @* <span class="hidden-xs">@Session["CurrentUserName"]</span> *@
+                        
+                        <span class="hidden-xs">@ViewBag.UserName</span>
+
+
+                    </a>
+                    <ul class="dropdown-menu bg-info">
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            <div class="pull-right">
+                                <a href="@Url.Action("Logout" , "Users")" class="btn btn-default btn-flat">Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        
+
+    </nav>
+</header>
