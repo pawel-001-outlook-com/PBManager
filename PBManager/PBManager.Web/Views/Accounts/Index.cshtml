@@ -1,0 +1,237 @@
+﻿
+@{
+                ViewBag.Title = "Accounts";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.Title
+            <p><small>Manage your accounts</small></p>
+        </h1>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- box -->
+        <div class="row">
+            <div class="col-md-10">
+                <!-- main row -->
+
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <a href="#" onclick="AddAccount()" class="btn btn-flat btn-block btn-success"><i class="fa fa-plus"></i> New account</a>
+                            </div>
+                        </div>
+                        <br />
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+
+                                <table class="table table-hover data-table" style="width: 100%;" id="tblPerson">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Initial balance</th>
+                                            <th>Balance</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+
+        </div> <!-- / main row-->
+    </section>
+    <!-- /.content -->
+
+
+    <div class="modal fade" id="accountViewModal">
+        <div class="modal-dialog" style="width:800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">Account Details</h3>
+                </div>
+                <div class="modal-body" id="accountViewModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="accountEditModal">
+        <div class="modal-dialog" style="width:800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">Edit account</h3>
+                </div>
+                <div class="modal-body" id="accountEditModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="accountDeleteModal">
+        <div class="modal-dialog" style="width:800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title">Delete account</h3>
+                </div>
+                <div class="modal-body" id="accountDeleteModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="accountAddNewModal">
+        <div class="modal-dialog" style="width:800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title content-header">Add account</h3>
+                </div>
+                <div class="modal-body" id="accountAddNewModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="cashflowAddNewModal">
+        <div class="modal-dialog" style="width: 800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title content-header">Add cashflow</h3>
+                </div>
+                <div class="modal-body" id="cashflowAddNewModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script src="~/Content/AdminLte2/plugins/datatables/jquery.dataTables.js"></script>
+
+    <script type="text/javascript">
+        
+
+        $(function () {
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            $("#tblPerson")
+                .DataTable({
+                    "serverSide": true,
+                    "ajax": "/Accounts/AccountData?userId=" + @User.Identity.Name,
+                    columnDefs: [{ orderable: false, targets: [3] }],
+                    "columns": [
+                        { "data": "Name" },
+                        { "data": "InitialBalance" },
+                        { "data": "TotalExpenses" },
+                        {
+                            data: null,
+                            render: function (data, type, row) {
+                                return "<a href+'#' onclick='ShowAccount(" + row.Id + ")' class='btn btn-flat btn-default'><i class='fa fa-eye'></i> View</a>"
+                                    + "<a href='#' onclick='EditAccount(" + row.Id + ")' class='btn btn-flat btn-default'><i class='fa fa-pencil-square-o'></i> Edit</a>"
+                                    + "<a href='#' onclick='DeleteAccount(" + row.Id + ")' class='btn btn-flat btn-danger'><i class='fa fa-trash-o'></i> Delete</a> ";
+
+                            }
+                        }
+                    ],
+                    searchDelay: 1000
+                });
+
+        })
+
+
+        var ShowAccount = function (accountId) {
+            var url = "/Accounts/View/" + accountId;
+
+            $.ajax({
+                type: "GET",
+                url: url,
+                success: function() {
+                    $("#accountViewModalBody").load(url,
+                        function() {
+                            $("#accountViewModal").modal("show");
+                        });
+                },
+                error: function(xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+            });
+        }
+
+        var EditAccount = function (accountId) {
+
+            var url = "/Accounts/Edit/" + accountId;
+
+            $("#accountEditModalBody").load(url,
+                function() {
+                    $("#accountEditModal").modal("show");
+                });
+        }
+
+
+        var DeleteAccount = function (accountId) {
+
+            var url = "/Accounts/Delete/" + accountId;
+
+            $("#accountDeleteModalBody").load(url,
+                function() {
+                    $("#accountDeleteModal").modal("show");
+                });
+        }
+
+        var AddAccount = function () {
+
+            var url = "/Accounts/New/";
+
+            $("#accountAddNewModalBody").load(url,
+                function() {
+                    $("#accountAddNewModal").modal("show");
+                });
+        }
+
+        var AddCashflow = function (accountId) {
+            var url = "/Cashflows/New?accountId=" + accountId;
+
+            $("#accountViewModal").modal('hide');
+
+            $("#cashflowAddNewModalBody").load(url,
+                function() {
+                    $("#cashflowAddNewModal").modal("show");
+                });
+        }
+
+
+    </script>
+}

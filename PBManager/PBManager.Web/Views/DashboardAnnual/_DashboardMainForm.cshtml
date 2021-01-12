@@ -1,0 +1,211 @@
+﻿@using System.Globalization
+@model PBManager.Dto.ViewModels.ReportFormDataRequestViewModel
+
+@{
+    SelectList categoriesSelectList = (SelectList)TempData["categoriesSelectList"];
+    SelectList accountsSelectList = (SelectList)TempData["accountsSelectList"];
+    SelectList subcategoriesSelectList = new SelectList(new List<string>(), "Id", "Name", new { });
+    SelectList projectsSelectList = (SelectList)TempData["projectsSelectList"];
+}
+
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Quick Example</h3>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    <form role="form" id="reportFormId">
+        <div class="box-body">
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-5">
+                        <label for="accountSelect">Account</label>
+                        @Html.DropDownList("accountSelect",
+                            accountsSelectList,
+                            "select account",
+                            new { @class = "form-control", @id = "accountSelect", @placeholder = "select account"})
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label for="categorySelect">Category</label>
+                        @Html.DropDownList("categorySelect",
+                            categoriesSelectList,
+                            "select category",
+                            new { @class = "form-control", @id = "categorySelect", @placeholder = "select category"})
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="subcategorySelect">Subcategory</label>
+                        @Html.DropDownList("subcategorySelect",
+                            subcategoriesSelectList,
+                            "select subcategory",
+                            new { @class = "form-control", @id = "subcategorySelect", @placeholder = "select subcategory"})
+                    </div>
+                    <div class="col-xs-3">
+                        <label for="projectSelect">Project</label>
+                        @Html.DropDownList("projectSelect",
+                            projectsSelectList,
+                            "select project",
+                            new { @class = "form-control", @id = "projectSelect", @placeholder = "select project"})
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-3">
+                        <label for="monthSelect">Year</label>
+                        @Html.TextBoxFor(m => m.period,
+                            new { Class = "form-control",  Type = "text", Id = "monthSelect" })
+                        @Html.ValidationMessageFor(m => m.period, "", new { Class = "text-red" })
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.box-body -->
+
+        <div class="box-footer">
+            <a href="#" class="btn btn-primary" id="btnSubmit">Submit</a>
+        </div>
+
+
+        @{
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            var tokenHeaderValue = cookieToken + ":" + formToken;
+        }
+
+    </form>
+</div><!-- /.box -->
+
+
+<script src="~/Content/js/plugins/jquery/jquery-3.3.1.js"></script>
+@* @Scripts.Render("~/Bundles/js") *@
+@Scripts.Render("~/bundles/jqueryval")
+
+
+<script>
+    $(document).ready(function () {
+
+        var TOKENHEADERVALUE = '@tokenHeaderValue';
+
+
+
+
+        $('#categorySelect').change(
+            function() {
+                var selectedCategory = $('#categorySelect').val();
+                var subcategorySelect = $('#subcategorySelect');
+                subcategorySelect.empty();
+                if (selectedCategory != null && selectedCategory != '') {
+
+                    $.getJSON('@Url.Action("GetCategoryAndSubcategories")',
+                        { categoryId: selectedCategory },
+                        function(subcategories) {
+                            if (subcategories != null && !jQuery.isEmptyObject(subcategories)) {
+                                subcategorySelect.append($('<option/>',
+                                    {
+                                        value: "",
+                                        text: "(Choose one [updated])"
+                                    }));
+                                $.each(subcategories,
+                                    function(index, subcategory) {
+                                        subcategorySelect.append($('<option/>',
+                                            {
+                                                value: subcategory.Value,
+                                                text: subcategory.Text
+                                            }));
+                                    });
+                            };
+                        });
+                }
+            })
+
+
+        $('#monthSelect').datepicker({
+            format: "yyyy",
+            startView: "years",
+            minViewMode: "years",
+        });
+
+        $('#yearSelect').datepicker({
+            format: "yyyy",
+            startView: "years",
+            minViewMode: "years"
+        });
+
+        $("#btnSubmit").click(function () {
+
+            if (!$("#reportFormId").valid()) {
+                return false;
+            };
+
+            var reportformdata = { accountId: "", categoryId: "", subcategoryId: "", projectId: "", month: "", year: "" };
+            reportformdata.accountId = $("#accountSelect").val();
+            reportformdata.categoryId = $("#categorySelect").val();
+            reportformdata.subcategoryId = $("#subcategorySelect").val();
+            reportformdata.projectId = $("#projectSelect").val();
+            reportformdata.month = $("#monthSelect").val();
+            reportformdata.year = $("#yearSelect").val();
+
+            $.ajax({
+                type: "POST",
+                url: "/DashboardAnnual/GetReportData",
+                data: reportformdata,
+                success: function (data) {
+                    $("div.divPieChart").remove();
+                    BuildPieGraphic(data);
+                    //                        var GetProgressBarDataPost
+                    $.ajax({
+                        method: 'POST',
+                        url: '/DashboardAnnual/GetProgressBarData',
+                        data: reportformdata,
+                        success: function (data) {
+                            var index = 0;
+                            var sumOfValues = 0;
+
+                            while (index < data.length) {
+                                sumOfValues = sumOfValues + data[index].categorySum;
+                                index = index + 1;
+                            }
+
+                            index = 0;
+
+                            $("div.classProgressBars div.divProgressBars").remove();
+                            $("div.classProgressBars").append("<div class='divProgressBars'></div>");
+
+                            while (index < data.length) {
+                                $("div.divProgressBars").append(BuildBudgetProgressBar(data, index, sumOfValues));
+                                $("div.divProgressBars").append('<br/>');
+                                index = index + 1;
+                            }
+
+                            $.ajax({
+                                method: 'POST',
+                                url: '/DashboardAnnual/GetExpensesData',
+                                data: reportformdata,
+                                success: function (data) {
+                                    $("div.classExpensesLineChart canvas#canvasExpensesLineChart").remove();
+                                    $("div.classExpensesLineChart").append("<canvas id='canvasExpensesLineChart' style='height: 250px'></canvas>");
+                                    BuildLineGraphic(data);
+
+                                }
+                            });
+                        }
+                    });
+                }
+
+            });
+
+
+
+        });
+    })
+</script>

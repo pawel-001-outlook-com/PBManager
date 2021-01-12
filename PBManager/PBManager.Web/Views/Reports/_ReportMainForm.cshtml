@@ -1,0 +1,144 @@
+﻿@model PBManager.Dto.ViewModels.ReportFormDataRequestViewModel
+
+@{
+    SelectList categoriesSelectList = (SelectList)TempData["categoriesSelectList"];
+    SelectList accountsSelectList = (SelectList)TempData["accountsSelectList"];
+    SelectList subcategoriesSelectList = new SelectList(new List<string>(), "Id", "Name", new { });
+    SelectList projectsSelectList = (SelectList)TempData["projectsSelectList"];
+}
+
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Report form</h3>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+    <form role="form" id="reportFormId">
+        <div class="box-body">
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-5">
+                        <label for="accountSelect">Account</label>
+                        @Html.DropDownList("accountSelect",
+                            accountsSelectList,
+                            "select account",
+                            new { @class = "form-control", @id = "accountSelect", @placeholder = "select account" })
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label for="categorySelect">Category</label>
+                        @Html.DropDownList("categorySelect",
+                            categoriesSelectList,
+                            "select category",
+                            new { @class = "form-control", @id = "categorySelect", @placeholder = "select category"})
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="subcategorySelect">Subcategory</label>
+                        @Html.DropDownList("subcategorySelect",
+                            subcategoriesSelectList,
+                            "select subcategory",
+                            new { @class = "form-control", @id = "subcategorySelect", @placeholder = "select subcategory"})
+                    </div>
+                    <div class="col-xs-3">
+                        <label for="projectSelect">Project</label>
+                        @Html.DropDownList("projectSelect",
+                            projectsSelectList,
+                            "select project",
+                            new { @class = "form-control", @id = "projectSelect", @placeholder = "select project"})
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-3">
+                        <label for="datefromSelect">Date from</label>
+
+                        @Html.TextBoxFor(m => m.datefrom,
+                            new { Class = "form-control",  Type = "text", Id = "dateFromSelectId" })
+                        @Html.ValidationMessageFor(m => m.datefrom, "", new { Class = "text-red" })
+                    </div>
+                    <div class="col-xs-3">
+                        <label for="datetoSelect">Date to</label>
+
+                        @Html.TextBoxFor(m => m.dateto,
+                            new { Class = "form-control",  Type = "text", Id = "dateToSelectId" })
+                        @Html.ValidationMessageFor(m => m.dateto, "", new { Class = "text-red" })
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.box-body -->
+
+        <div class="box-footer">
+            <a href="#" class="btn btn-primary" id="btnSubmit">Submit</a>
+        </div>
+    </form>
+</div><!-- /.box -->
+
+<script src="~/Content/js/plugins/jquery/jquery-3.3.1.js"></script>
+@* <script src="~/Content/AdminLte2/plugins/datatables/jquery.dataTables.js"></script> *@
+<script src="~/Content/js/init.js"></script>
+
+@* @Scripts.Render("~/Bundles/js") *@
+@Scripts.Render("~/bundles/jqueryval")
+
+
+<script>
+    $(document).ready(function () {
+        $('#dateFromSelectId').datepicker({
+            format: "yyyy-mm-dd"
+        });
+
+        $('#dateToSelectId').datepicker({
+            format: "yyyy-mm-dd"
+        });
+
+        $("#btnSubmit").click(function () {
+
+           
+
+            if (!$("#reportFormId").valid()) {
+                return false;
+            };
+
+            $("#reportBodyId").remove();
+
+            var reportformdata = { accountId: "", categoryId: "", subcategoryId: "", projectId: "", datefrom: "", dateto: "" };
+
+            reportformdata.accountId = $("#accountSelect").val();
+            reportformdata.categoryId = $("#categorySelect").val();
+            reportformdata.subcategoryId = $("#subcategorySelect").val();
+            reportformdata.projectId = $("#projectSelect").val();
+            reportformdata.datefrom = $("#dateFromSelectId").val();
+            reportformdata.dateto = $("#dateToSelectId").val();
+
+
+            $.ajax({
+                type: "POST",
+                url: "/Reports/GetReportData",
+                data: reportformdata,
+                success: function (response) {
+                    $("#reportId").append("<div id='reportBodyId'><div class='box box-primary'><div class='box-header with-border'><h3 class='box-title'>Report result</h3><div><div><div class='row' id='tableRowId'><div><div>")
+                    $("#tableRowId").html(response);
+                },
+                error: function (xhr) {
+                    $("#tablaDataId").remove();
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            });
+
+
+
+        });
+    })
+</script>

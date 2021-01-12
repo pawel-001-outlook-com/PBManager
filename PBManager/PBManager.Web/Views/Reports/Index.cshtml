@@ -1,0 +1,85 @@
+﻿@model PBManager.Dto.ViewModels.ReportViewModel
+@{
+    ViewBag.Title = "Reports";
+
+    SelectList categoriesComboBox = ViewBag.categoriesSelectList;
+    SelectList accountsComboBox = ViewBag.accountsSelectList;
+    SelectList subcategoriesComboBox = new SelectList(new List<string>(), "Id", "Name", new { });
+    SelectList projectsComboBox = ViewBag.projectsSelectList;
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <div>
+        <!-- Content Header (Page header) -->
+        <section class="content-header" id="sectionContentHeaderId">
+            <h1>
+                @ViewBag.Title
+                <small></small>
+            </h1>
+        </section>
+    </div>
+
+    <div>
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-md-6">
+                    @Html.Partial("_ReportMainForm")
+                </div>
+
+                <div class="col-md-6"></div>
+
+            </div>
+
+
+
+
+
+            <div id="reportId">
+            </div>
+        </section>
+
+        <!-- /.body -->
+    </div>
+<!-- /.content-wrapper -->
+
+
+    <script src="~/Content/js/plugins/jquery/jquery-3.3.1.js"></script>
+<script src="~/Content/AdminLte2/plugins/datatables/jquery.dataTables.js"></script>
+<script src="~/Content/js/init.js"></script>
+@Scripts.Render("~/bundles/jqueryval")
+
+
+
+@section Scripts
+    {
+    <script type="text/javascript">
+            $('#categoryId').change(
+                function() {
+                    var selectedCategory = $('#categoryId').val();
+                    var subcategorySelect = $('#subcategoryId');
+                    subcategorySelect.empty();
+                    if (selectedCategory != null && selectedCategory != '') {
+                        $.getJSON('@Url.Action("GetCategoryAndSubcategories")',
+                            { categoryId: selectedCategory },
+                            function(subcategories) {
+                                if (subcategories != null && !jQuery.isEmptyObject(subcategories)) {
+                                    subcategorySelect.append($('<option/>',
+                                        {
+                                            value: "",
+                                            text: "(Choose one [updated])"
+                                        }));
+                                    $.each(subcategories,
+                                        function(index, subcategory) {
+                                            subcategorySelect.append($('<option/>',
+                                                {
+                                                    value: subcategory.Value,
+                                                    text: subcategory.Text
+                                                }));
+                                        });
+                                };
+                            });
+                    }
+                });
+    </script>
+}

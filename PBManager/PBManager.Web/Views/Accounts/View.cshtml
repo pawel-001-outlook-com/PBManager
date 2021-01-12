@@ -1,0 +1,98 @@
+﻿@model PBManager.Dto.ViewModels.AccountViewModel
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <!-- box -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Account details</h3>
+                <div class="box-tools pull-right">
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form role="form">
+                            <div class="row">
+
+                                @Html.HiddenFor(a => a.Id)
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.UserId)
+                                            @Html.TextBoxFor(a => a.UserId, new { Class = "form-control", Readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.Name)
+                                            @Html.TextBoxFor(a => a.Name, new { Class = "form-control", Readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.InitialBalance)
+                                            @Html.TextBoxFor(a => a.InitialBalance, new { Class = "form-control", Readonly = "readonly", Value = Model.InitialBalance })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.Balance)
+                                            @Html.TextBoxFor(a => a.Balance, new { Class = "form-control", Readonly = "readonly", Value = Model.Balance })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.LabelFor(a => a.Description)
+                                            @Html.TextAreaFor(a => a.Description, new { Class = "form-control", Readonly = "readonly" })
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+
+    </div>
+</div>
+
+
+<!-- table-box -->
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Quick actions</h3>
+        <div class="box-tools pull-right">
+        </div>
+    </div>
+
+    <div class="box-footer clearfix">
+        <button class="btn btn-sm btn-info btn-flat pull-left" onclick="AddCashflow(@Model.Id)"><i class="fa fa-plus"></i> Add cashflow</button>
+    </div>
+    <!-- /.box-footer -->
+</div>
+<!-- ./table-box -->
+

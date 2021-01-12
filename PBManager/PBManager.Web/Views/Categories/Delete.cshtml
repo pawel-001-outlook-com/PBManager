@@ -1,0 +1,67 @@
+﻿@model PBManager.Dto.ViewModels.CategoryViewModel
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+
+            <!-- box -->
+            <div class="box box-danger">
+                <div class="box-body">
+                    <div class="alert alert-danger">
+                        <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+                        This operation can not be undone!
+                        <br />The subcategories also will be deleted
+                    </div>
+
+                    <dl class="dl-horizontal">
+                        <dt>@Html.DisplayNameFor(m => m.Name)</dt>
+                        <dd>@Html.DisplayFor(m => m.Name)</dd>
+                    
+                        <dt>Number of child subcategories</dt>
+                        <dd>@Model.Subcategories.Count</dd>
+                    </dl>
+
+                    <form id="categoryDeleteForm">
+                        @Html.HiddenFor(m => m.Id)
+                        @Html.AntiForgeryToken()
+                        <a href="#" class="btn btn-flat btn-danger" id="btnDelete"><i class="fa fa-trash-o"></i> Delete</a>
+                    </form>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</section>
+<!-- /.content -->
+
+
+<script>
+
+    $(document).ready(function () {
+
+        $("#btnDelete").click(function () {
+
+            var categoryId = $("#Id").val();
+
+            $.ajax({
+                url: "/api/categories?id=" + categoryId,
+                method: "DELETE",
+                success: function () {
+                    $("#categoryDeleteModal").modal("hide");
+                    $("#tblCategory").DataTable().ajax.reload();
+                },
+                error: function (xhr) {
+                    var obj = JSON.parse(xhr.responseText);
+                    toastr.error("Unexpected error: " + obj.g);
+                }
+
+            })
+        })
+
+    })
+
+
+</script>
